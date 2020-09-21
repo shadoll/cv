@@ -6,6 +6,8 @@
 
 module.exports = {
   siteName: 'Gridsome',
+  pathPrefix: "/sha/cv/",
+  outputDir: "public",
   plugins: [
     {
       use: "gridsome-plugin-i18n",
