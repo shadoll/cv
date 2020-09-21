@@ -1,0 +1,19 @@
+{
+  "name": "cv",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0",
+    "gridsome-plugin-i18n": "^1.6.0",
+    "vuetify": "^2.3.10"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.2",
+    "webpack-node-externals": "^2.5.2"
+  }
+}
