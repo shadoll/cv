@@ -30,11 +30,15 @@
                     text-shadow: #694800 1px 1px 6px;
                 "
                 class="amber--text text--darken-2"
-                >            <v-avatar size="60">
-                <g-image src="~/assets/images/avatar.png"></g-image>
-            </v-avatar>{{ $t("about.name") }}</v-toolbar-title
+            >
+                <v-avatar size="100">
+                    <g-image
+                        src="~/assets/images/avatar.png"
+                    ></g-image> </v-avatar
+                > {{ $t("about.name") }}</v-toolbar-title
             >
             <v-spacer></v-spacer>
+            <ColorSwitcher />
             <LocaleSwitcher />
             <!-- <v-btn icon>
                 <v-icon>mdi-dots-vertical</v-icon>
@@ -220,13 +224,14 @@
 
 <script>
     import LocaleSwitcher from "~/components/LocaleSwitcher";
+    import ColorSwitcher from "~/components/ColorSwitcher";
     import SideBar from "~/components/SideBar";
     import Resume from "../layouts/Resume.vue";
     import { mdiSkype } from "@mdi/js";
     import { mdiVuejs } from "@mdi/js";
 
     export default {
-        components: { LocaleSwitcher, SideBar, Resume },
+        components: { LocaleSwitcher, ColorSwitcher, SideBar, Resume },
         data: () => ({
             textcolor: "orange",
             drawer: null,
@@ -249,12 +254,12 @@
         padding-bottom: 0;
     }
     /* .v-timeline .v-timeline-item--after .v-timeline-item__body {
-                          max-width: calc(70% - 48px) !important;
-                        }
-                        .v-timeline:before {
-                        left: calc(30% - 1px) !important;
-                        }
-                        .v-timeline-item__opposite {
-                          max-width: calc(30% - 48px);
-                        } */
+                              max-width: calc(70% - 48px) !important;
+                            }
+                            .v-timeline:before {
+                            left: calc(30% - 1px) !important;
+                            }
+                            .v-timeline-item__opposite {
+                              max-width: calc(30% - 48px);
+                            } */
 </style>
