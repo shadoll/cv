@@ -12,6 +12,7 @@
     "vuetify": "^2.3.10"
   },
   "devDependencies": {
+    "@mdi/js": "^5.8.55",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.2",
     "webpack-node-externals": "^2.5.2"

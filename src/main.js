@@ -5,7 +5,8 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import '~/assets/styles.scss'
 import DefaultLayout from '~/layouts/Default.vue'
-import CVLayout from '~/layouts/dark.vue'
+import CVLayout from '~/layouts/CV.vue'
+import '~/plugins/vuetify.js'
 
 export default function (Vue, { router, head, isClient, appOptions }) {
   head.link.push({
@@ -17,6 +18,11 @@ export default function (Vue, { router, head, isClient, appOptions }) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900',
   });
+
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css2?family=Poiret+One'
+  })
 
   const opts = {}
   Vue.use(Vuetify)

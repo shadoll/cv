@@ -11,14 +11,13 @@
             </nav>
         </header>
         <slot />
-        <v-footer>
-            <v-spacer></v-spacer>
-            <div>&copy; {{ new Date().getFullYear() }}</div>
-        </v-footer>
+
+        <g-footer/>
     </div>
 </template>
 
 <script>
+    import gFooter from "~/components/Footer"
     import LocaleSwitcher from "~/components/LocaleSwitcher";
 
     export default {
