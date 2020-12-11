@@ -7,14 +7,15 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.7.0",
+    "gridsome": "^0.7.23",
     "gridsome-plugin-i18n": "^1.6.0",
-    "vuetify": "^2.3.10"
+    "vuetify": "^2.3.21"
   },
   "devDependencies": {
     "@mdi/js": "^5.8.55",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^10.0.2",
+    "levenary": "^1.1.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
     "webpack-node-externals": "^2.5.2"
   }
 }

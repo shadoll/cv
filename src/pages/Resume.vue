@@ -4,15 +4,14 @@
 
         <v-app-bar
             app
-            absolute
             clipped-left
             color="#6A76AB"
             dark
             shrink-on-scroll
-            prominent0
+            prominent
             src="https://picsum.photos/id/180/1920/1080"
-            fade-img-on-scroll0
-            scroll-target="#scrolling-techniques-3"
+            fade-img-on-scroll
+            scroll-target="#scrolling-techniques"
         >
             <template v-slot:img="{ props }">
                 <v-img
@@ -23,9 +22,7 @@
             <v-app-bar-nav-icon
                 @click.stop="miniVariant = !miniVariant"
             ></v-app-bar-nav-icon>
-            <v-avatar size="90">
-                <g-image src="~/assets/images/avatar.png"></g-image>
-            </v-avatar>
+
             <v-toolbar-title
                 style="
                     font-family: 'Poiret One', sans-serif;
@@ -33,17 +30,19 @@
                     text-shadow: #694800 1px 1px 6px;
                 "
                 class="amber--text text--darken-2"
-                >{{ $t("about.name") }}</v-toolbar-title
+                >            <v-avatar size="60">
+                <g-image src="~/assets/images/avatar.png"></g-image>
+            </v-avatar>{{ $t("about.name") }}</v-toolbar-title
             >
             <v-spacer></v-spacer>
             <LocaleSwitcher />
-            <v-btn icon>
+            <!-- <v-btn icon>
                 <v-icon>mdi-dots-vertical</v-icon>
-            </v-btn>
+            </v-btn> -->
         </v-app-bar>
 
         <v-main>
-            <v-sheet id="scrolling-techniques-3" class="overflow-y-auto">
+            <v-sheet id="scrolling-techniques" class="overflow-y-auto">
                 <v-card width="100%" tile>
                     <v-card-title>{{ $t("cv.about") }}</v-card-title>
                     <v-row align="end" class="fill-height">
