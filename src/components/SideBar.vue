@@ -1,6 +1,5 @@
 <template>
     <v-navigation-drawer
-        v-model="drawer"
         app
         dark
         clipped
@@ -8,7 +7,7 @@
         permanent
     >
         <v-list dense>
-            <v-list-item link href="#about">
+            <v-list-item link v-on:click="go('#about')">
                 <v-list-item-action>
                     <v-icon>mdi-account</v-icon>
                 </v-list-item-action>
@@ -17,7 +16,7 @@
                 </v-list-item-content>
             </v-list-item>
 
-            <v-list-item link>
+            <v-list-item link v-on:click="go('#tech')">
                 <v-list-item-action>
                     <v-icon>mdi-hammer-screwdriver</v-icon>
                 </v-list-item-action>
@@ -28,7 +27,7 @@
                 </v-list-item-content>
             </v-list-item>
 
-            <v-list-item link>
+            <v-list-item link v-on:click="go('#experience')">
                 <v-list-item-action>
                     <v-icon>mdi-briefcase</v-icon>
                 </v-list-item-action>
@@ -39,7 +38,7 @@
                 </v-list-item-content>
             </v-list-item>
 
-            <v-list-item link href="#school">
+            <v-list-item link v-on:click="go('#school')">
                 <v-list-item-action>
                     <v-icon>mdi-school</v-icon>
                 </v-list-item-action>
@@ -56,5 +55,10 @@
 <script>
     export default {
         props: ["miniVariant"],
+        methods: {
+            go(label) {
+                this.$vuetify.goTo(label,'easeInOutCubic')
+            }
+        }
     };
 </script>
