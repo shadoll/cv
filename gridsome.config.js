@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'shadoll',
-  pathPrefix: "/sha/cv/",
+  pathPrefix: "/",
   outputDir: "public",
   plugins: [
     {
