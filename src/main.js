@@ -32,9 +32,10 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   // i18n
   appOptions.i18n.setLocaleMessage('en-gb', require('./locales/en.json'))
   appOptions.i18n.setLocaleMessage('uk-ua', require('./locales/ua.json'))
-  appOptions.i18n.setLocaleMessage('ru-ru', require('./locales/en.json'))
+  // appOptions.i18n.setLocaleMessage('ru-ru', require('./locales/en.json'))
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.component('CVLayout', CVLayout)
+
 }
