@@ -18,7 +18,8 @@
     },
     "about": {
         "name": "Олександр Пономаренко",
-        "age": " років",
+        "years": " років",
+        "days": " днів",
         "trade": "програміст, розробник",
         "location": "Чернігів, Україна",
         "phone": "+380 97 0 641 641",
@@ -28,19 +29,23 @@
     },
     "tech": [
         {
-            "group": "Skils",
+            "group": "Навички",
             "list": [
                 {
-                    "title": "Teamwork"
+                    "name": "teamwork",
+                    "title": "Командна робота"
                 },
                 {
+                    "name": "leader",
                     "title": "Leadership"
                 },
                 {
+                    "name": "creativity",
                     "title": "Creativity"
                 },
                 {
-                    "title": "Analytical or Critical Thinking"
+                    "name": "thinking",
+                    "title": "Аналітичне або критичне мислення"
                 }
             ]
         },
@@ -48,15 +53,19 @@
             "group": "Backend",
             "list": [
                 {
+                    "name": "php",
                     "title": "PHP"
                 },
                 {
+                    "name": "laravel",
                     "title": "Laravel"
                 },
                 {
+                    "name": "api",
                     "title": "REST API"
                 },
                 {
+                    "name": "nodejs",
                     "title": "Node.js"
                 }
             ]
@@ -65,15 +74,23 @@
             "group": "Frontend",
             "list": [
                 {
+                    "name": "html",
+                    "title": "HTML"
+                },
+                {
+                    "name": "vuejs",
                     "title": "Vue.js"
                 },
                 {
+                    "name": "css",
                     "title": "CSS"
                 },
                 {
+                    "name": "sass",
                     "title": "SASS/LESS/Stylus"
                 },
                 {
+                    "name": "jquery",
                     "title": "jQuery"
                 }
             ]
@@ -82,13 +99,20 @@
             "group": "Бази даних",
             "list": [
                 {
+                    "name": "mysql",
                     "title": "MySQL"
                 },
                 {
+                    "name": "postgres",
                     "title": "PostgreSQL"
                 },
                 {
+                    "name": "nosql",
                     "title": "NoSQL"
+                },
+                {
+                    "name": "graphql",
+                    "title": "GraphQL"
                 }
             ]
         },
@@ -96,26 +120,35 @@
             "group": "DevOps",
             "list": [
                 {
+                    "name": "git",
                     "title": "git"
                 },
                 {
+                    "name": "gitlab",
                     "title": "GitLab CI/CD"
                 },
                 {
+                    "name": "docker",
                     "title": "docker"
                 },
                 {
+                    "name": "compose",
                     "title": "docker-compose"
                 },
                 {
+                    "name": "traefik",
                     "title": "Traefik"
                 },
                 {
+                    "name": "nginx",
                     "title": "Nginx"
                 },
                 {
+                    "name": "apache",
                     "title": "Apache"
-                }, {
+                },
+                {
+                    "name": "bash",
                     "title": "sh/bash/zsh"
                 }
             ]
