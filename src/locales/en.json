@@ -10,6 +10,9 @@
             "title": "english"
         }
     },
+    "meta": {
+        "title": "CV"
+    },
     "cv": {
         "about": "About",
         "experience": "Experience",
@@ -76,7 +79,7 @@
             ]
         },
         {
-            "group": "Бази даних",
+            "group": "Databases",
             "list": [
                 {
                     "title": "MySQL"
@@ -119,9 +122,9 @@
             ]
         }
     ],
-    "exp": [
+    "experience": [
         {
-            "place": "Фабрика-клієнтів",
+            "place": "Fabrika-klientov",
             "period": "January 2018 — September 2020",
             "title": "Web Developer, DevOps, Product Architect, Product Manager",
             "description": ""
@@ -130,37 +133,37 @@
             "place": "Yarisvet",
             "period": "December 2015 — October 2017",
             "title": "Web Developer, System Administrator",
-            "description": "Проектування, розробка, впровадження та супровід сайтів. Встановлення та адміністрування серверів."
+            "description": "Building and development customised web portals to the highest specifications. Setup and configs servers."
         },
         {
             "place": "Seattle webproject",
             "period": "June 2015 — December 2015",
             "title": "Web Developer",
-            "description": "Проектування та розробка сайту - кириличне дзеркало японського аукціону yahoo, з можливістю встановлення ставок. Створення модулів для OpenCart."
+            "description": "Building, designing and development of the site – a Cyrillic mirror of Yahoo Japan Auction, where allow to start bidding in real-time. Develop OpenCart modules."
         },
         {
             "place": "Internet Marketing Agency REVOLIFE",
             "period": "October 2013 — September 2014",
             "title": "Web Developer, Project Manager",
-            "description": "Проектування та розробка продукту для парсингу сайтів з можливістю легкого та гнучкого конфігурування. Керування проектами та розробниками агенції. Участь у проектуванні та розробці CRM-продукту компанії. Адміністрування серверів."
+            "description": "Designing and development of a product for parsing sites with the possibility of easy and flexible configuration. Project management and agency developers management. Participation in the designing and development of the company's CRM product. The overall control of a servers (the server administrator's role)."
         },
         {
             "place": "PJSC “Slavyanski Wallpaper – KFTP”",
             "period": "березень 2013 — October 2014",
             "title": "1C Developer, Product Architect",
-            "description": "Розробка та підтримка 1С «Управління виробничим підприємством». Розробка системи «Електронного документообігу» у 1С 8. Адміністрування серверів та мережевої інфраструктури."
+            "description": "Development and support of 1C \"Management of the production enterprise\". Development of  \"Electronic document management system\" (EDM/ECM) in 1C 8. Administration of servers and network infrastructure."
         },
         {
             "place": "PJSC “Chernihivgas”",
             "period": "September 2005 — January 2007",
             "title": "1C Developer",
-            "description": "Супровід та впровадження систем автоматизації обліку за допомогою 1С 8. Розробка системи «Фінансування» у 1С 8. Адміністрування серверів та мережевої інфраструктури."
+            "description": "Maintenance and implementation of accounting automation systems using 1C 8. Development of \"Financing\" system  in 1C 8. Administration of servers and network infrastructure."
         },
         {
             "place": "Chernihiv branch of “IAPM”",
             "period": "September 2006 — 2010",
             "title": "1C Developer",
-            "description": "Впровадження, супровід та доробка 1С «Бухгалтерський облік». Супровід та доробка 1С 7.7 «Бухгалтерський облік» й 1С 7.7 «Зарплата»."
+            "description": "Implementation, support and completion of 1C \"Accounting\". Maintenance and completion of 1C 7.7 \"Accounting\" and 1C 7.7 \"Salary\"."
         }
     ],
     "education": [
