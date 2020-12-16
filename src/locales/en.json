@@ -58,6 +58,9 @@
                 },
                 {
                     "title": "REST API"
+                },
+                {
+                    "title": "Node.js"
                 }
             ]
         },
@@ -171,19 +174,19 @@
             "place": "Chernihiv State Technological University",
             "period": "2005 — 2006",
             "title": "Accounting and Auditing",
-            "description": "Received specialist's degree."
+            "description": "Received specialist's degree"
         },
         {
             "place": "Institute of Municipal Management and Business",
             "period": "2000 — 2002",
             "title": "Business economics",
-            "description": "Received bachelor's degree."
+            "description": "Received bachelor's degree"
         },
         {
             "place": "Chernihiv State Technological University",
             "period": "1998 — 2000",
             "title": "Electronic systems",
-            "description": "Not finished."
+            "description": "Not finished"
         }
     ]
 }
