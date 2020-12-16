@@ -18,9 +18,11 @@
                                             >mdi-altimeter</v-icon
                                         >
                                         {{
-                                            new Date().getFullYear() -
-                                            1981 +
-                                            $t("about.age")
+                                            lifeyears +
+                                            $t("about.years") +
+                                            " / " +
+                                            lifedays +
+                                            $t("about.days")
                                         }}</v-list-item-title
                                     >
                                 </v-list-item-content>
@@ -61,7 +63,7 @@
                                 <v-list-item-content>
                                     <v-list-item-title
                                         ><v-icon :color="textcolor">{{
-                                            mdiSkype
+                                            icons.skype
                                         }}</v-icon>
                                         {{
                                             $t("about.skype")
@@ -82,17 +84,24 @@
                                 :key="k"
                                 class="ma-1"
                                 :color="textcolor"
-                                label
-                                text-color="white"
+                                label0
+                                outlined
+                                text-color0="white"
                             >
-                                <v-icon left v-text="tech.icon"></v-icon>
+                                <v-icon left>{{ icons[tech.name] }}</v-icon>
                                 {{ tech.title }}
                             </v-chip>
                         </v-chip-group>
                     </v-card-text>
                 </v-card>
-                <v-card width="100%" tile :id="category" v-for="(category, t) in timelines" :key="t">
-                    <v-card-title>{{ $t("cv."+category) }}</v-card-title>
+                <v-card
+                    width="100%"
+                    tile
+                    :id="category"
+                    v-for="(category, t) in timelines"
+                    :key="t"
+                >
+                    <v-card-title>{{ $t("cv." + category) }}</v-card-title>
                     <v-card-text>
                         <v-timeline>
                             <v-timeline-item
@@ -131,8 +140,29 @@
     import SideBar from "~/components/SideBar";
     import AppBar from "~/components/AppBar";
     import Resume from "../layouts/Resume.vue";
-    import { mdiSkype } from "@mdi/js";
-    import { mdiVuejs } from "@mdi/js";
+    import {
+        mdiJquery,
+        mdiLanguageCss3,
+        mdiLanguageHtml5,
+        mdiLaravel,
+        mdiNodejs,
+        mdiSkype,
+        mdiVuejs,
+        mdiLanguagePhp,
+        mdiApi,
+        mdiSass,
+        mdiGit,
+        mdiGitlab,
+        mdiDocker,
+        mdiBash,
+        mdiAccountGroup,
+        mdiAccountSupervisorCircle,
+        mdiHeadLightbulb,
+        mdiHeadDotsHorizontal,
+        mdiArrowDecision,
+        mdiDatabase,
+        mdiGraphql
+    } from "@mdi/js";
 
     export default {
         components: {
@@ -145,12 +175,36 @@
             drawer: null,
             miniVariant: false,
             mini: false,
-            mdiSkype: mdiSkype,
-            mdiVuejs: mdiVuejs,
-            timelines: [
-                "experience",
-                "education"
-            ]
+
+            icons: {
+                skype: mdiSkype,
+                php: mdiLanguagePhp,
+                laravel: mdiLaravel,
+                vuejs: mdiVuejs,
+                nodejs: mdiNodejs,
+                css: mdiLanguageCss3,
+                html: mdiLanguageHtml5,
+                jquery: mdiJquery,
+                api: mdiApi,
+                sass: mdiSass,
+                git: mdiGit,
+                gitlab: mdiGitlab,
+                docker: mdiDocker,
+                bash:mdiBash,
+                teamwork: mdiAccountGroup,
+                leader: mdiAccountSupervisorCircle,
+                creativity: mdiHeadLightbulb,
+                thinking: mdiHeadDotsHorizontal,
+                traefik: mdiArrowDecision,
+                apache: mdiArrowDecision,
+                nginx: mdiArrowDecision,
+                mysql: mdiDatabase,
+                postgres: mdiDatabase,
+                nosql: mdiDatabase,
+                graphql: mdiGraphql,
+            },
+
+            timelines: ["experience", "education"],
         }),
         metaInfo() {
             return {
@@ -164,6 +218,17 @@
         //     console.log(this.$t("meta.title"))
         //     this.metaInfo.title = this.$t("meta.title");
         // },
+        computed: {
+            lifeyears() {
+                return new Date().getFullYear() - 1981;
+            },
+            lifedays() {
+                return Math.round(
+                    (new Date().getTime() - new Date("1981.03.01").getTime()) /
+                        (1000 * 3600 * 24)
+                );
+            },
+        },
     };
 </script>
 
@@ -176,12 +241,12 @@
         padding-bottom: 0;
     }
     /* .v-timeline .v-timeline-item--after .v-timeline-item__body {
-                                                              max-width: calc(70% - 48px) !important;
-                                                            }
-                                                            .v-timeline:before {
-                                                            left: calc(30% - 1px) !important;
-                                                            }
-                                                            .v-timeline-item__opposite {
-                                                              max-width: calc(30% - 48px);
-                                                            } */
+                                                                          max-width: calc(70% - 48px) !important;
+                                                                        }
+                                                                        .v-timeline:before {
+                                                                        left: calc(30% - 1px) !important;
+                                                                        }
+                                                                        .v-timeline-item__opposite {
+                                                                          max-width: calc(30% - 48px);
+                                                                        } */
 </style>
