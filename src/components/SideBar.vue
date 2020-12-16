@@ -3,48 +3,23 @@
         app
         dark
         clipped
-        :mini-variant="miniVariant"
+        :mini-variant.sync="mini"
         permanent
+        bottom
     >
         <v-list dense>
-            <v-list-item link v-on:click="go('#about')">
+            <v-list-item
+                link
+                v-for="(item, k) in items"
+                :key="k"
+                v-on:click="go('#' + item.name)"
+            >
                 <v-list-item-action>
-                    <v-icon>mdi-account</v-icon>
-                </v-list-item-action>
-                <v-list-item-content>
-                    <v-list-item-title>{{ $t("cv.about") }}</v-list-item-title>
-                </v-list-item-content>
-            </v-list-item>
-
-            <v-list-item link v-on:click="go('#tech')">
-                <v-list-item-action>
-                    <v-icon>mdi-hammer-screwdriver</v-icon>
+                    <v-icon>{{ item.icon }}</v-icon>
                 </v-list-item-action>
                 <v-list-item-content>
                     <v-list-item-title>{{
-                        $t("cv.technologies")
-                    }}</v-list-item-title>
-                </v-list-item-content>
-            </v-list-item>
-
-            <v-list-item link v-on:click="go('#experience')">
-                <v-list-item-action>
-                    <v-icon>mdi-briefcase</v-icon>
-                </v-list-item-action>
-                <v-list-item-content>
-                    <v-list-item-title>{{
-                        $t("cv.experience")
-                    }}</v-list-item-title>
-                </v-list-item-content>
-            </v-list-item>
-
-            <v-list-item link v-on:click="go('#school')">
-                <v-list-item-action>
-                    <v-icon>mdi-school</v-icon>
-                </v-list-item-action>
-                <v-list-item-content>
-                    <v-list-item-title>{{
-                        $t("cv.education")
+                        $t("cv." + item.name)
                     }}</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
@@ -55,10 +30,35 @@
 <script>
     export default {
         props: ["miniVariant"],
+        data: () => ({
+            items: [
+                { name: "about", icon: "mdi-account" },
+                { name: "technologies", icon: "mdi-hammer-screwdriver" },
+                { name: "experience", icon: "mdi-briefcase" },
+                { name: "education", icon: "mdi-school" },
+            ],
+        }),
         methods: {
             go(label) {
-                this.$vuetify.goTo(label,'easeInOutCubic')
-            }
-        }
+                this.$vuetify.goTo(label, "easeInOutCubic");
+                this.mini;
+            },
+        },
+        computed: {
+            mini() {
+                switch (this.$vuetify.breakpoint.name) {
+                    case "xs":
+                        return true;
+                    case "sm":
+                        return true;
+                    case "md":
+                        return false;
+                    case "lg":
+                        return false;
+                    case "xl":
+                        return false;
+                }
+            },
+        },
     };
 </script>
