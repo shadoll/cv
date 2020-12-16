@@ -3,9 +3,6 @@
         "uk-ua": {
             "title": "українська"
         },
-        "ru-ru": {
-            "title": "российский"
-        },
         "en-gb": {
             "title": "english"
         }
@@ -126,7 +123,7 @@
     ],
     "experience": [
         {
-            "place": "Фабрика-клієнтів",
+            "place": "Фабрика клієнтів",
             "period": "січень 2018 — вересень 2020",
             "title": "веб розробник, DevOps, Product Architect, Product Manager",
             "description": ""

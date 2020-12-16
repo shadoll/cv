@@ -3,9 +3,6 @@
         "uk-ua": {
             "title": "ukrainian"
         },
-        "ru-ru": {
-            "title": "russian"
-        },
         "en-gb": {
             "title": "english"
         }
@@ -127,7 +124,7 @@
     ],
     "experience": [
         {
-            "place": "Fabrika-klientov",
+            "place": "Fabrika klientov",
             "period": "January 2018 — September 2020",
             "title": "Web Developer, DevOps, Product Architect, Product Manager",
             "description": ""
