@@ -80,7 +80,7 @@
                             <v-chip
                                 v-for="(tech, k) in tech.list"
                                 :key="k"
-                                class="ma-2"
+                                class="ma-1"
                                 :color="textcolor"
                                 label
                                 text-color="white"
@@ -91,7 +91,7 @@
                         </v-chip-group>
                     </v-card-text>
                 </v-card>
-                <v-card width="100%" tile id="experience" v-for="(category, t) in timelines" :key="t">
+                <v-card width="100%" tile :id="category" v-for="(category, t) in timelines" :key="t">
                     <v-card-title>{{ $t("cv."+category) }}</v-card-title>
                     <v-card-text>
                         <v-timeline>

@@ -2,17 +2,14 @@
     <v-app id="inspire">
         <slot />
 
-        <g-footer/>
+        <g-footer />
     </v-app>
 </template>
 
 <script>
-    import gFooter from "~/components/Footer"
+    import gFooter from "~/components/Footer";
     export default {
-        components: {gFooter},
-        props: {
-            source: String,
-        },
+        components: { gFooter },
 
         data: () => ({
             drawer: null,
@@ -20,7 +17,9 @@
         }),
 
         created() {
-            this.$vuetify.theme.dark = false;
+            const hours = new Date().getHours();
+            const isDayTime = hours > 6 && hours < 19;
+            this.$vuetify.theme.dark = !isDayTime;
         },
     };
 </script>
