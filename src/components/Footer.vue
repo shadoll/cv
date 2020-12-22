@@ -1,6 +1,8 @@
 <template>
     <v-footer dark v-bind="footerAttrs">
-        <span>&copy; {{ new Date().getFullYear() }}, shadoll</span>
+        <v-col class="text-right" cols="12">
+            &copy; {{ new Date().getFullYear() }}, shadoll
+        </v-col>
     </v-footer>
 </template>
 
@@ -9,7 +11,6 @@
         data: () => ({}),
         computed: {
             footerAttrs() {
-                console.log("ya");
                 const attrs = {};
 
                 switch (this.$vuetify.breakpoint.name) {
@@ -23,11 +24,10 @@
                     case "lg":
                     case "xl":
                         attrs.absolute = false;
-                        attrs.padless = false;
+                        attrs.padless = true;
                         attrs.app = true;
                         break;
                 }
-                console.log(attrs);
                 return attrs;
             },
         },
