@@ -28,8 +28,7 @@ jobs:
         with:
           node-version: '10.x'
       - run: npm install
-      - run: export PATH_PREFIX=/cv/
-      - run: npm run build
+      - run: export PATH_PREFIX=/cv/ && npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
