@@ -4,8 +4,6 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-console.warn(process.env.PATH_PREFIX)
-
 module.exports = {
   siteName: 'shadoll',
   pathPrefix: process.env.PATH_PREFIX ? process.env.PATH_PREFIX : '/',
