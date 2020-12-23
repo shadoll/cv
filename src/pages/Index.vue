@@ -224,8 +224,7 @@
             },
             lifedays() {
                 return Math.round(
-                    (new Date().getTime() - new Date("1981.03.01").getTime()) /
-                        (1000 * 3600 * 24)
+                    (new Date().getTime() - new Date("1981/03/01").getTime()) / (1000 * 3600 * 24)
                 );
             },
         },
