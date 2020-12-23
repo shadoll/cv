@@ -2,7 +2,7 @@
 
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: '10.x'
       - run: npm install
-      - run: npm run build
+      - run: npm run github
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
