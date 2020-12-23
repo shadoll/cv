@@ -3,12 +3,11 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
+require('dotenv').config()
 
 module.exports = {
   siteName: 'shadoll',
-  pathPrefix: process.env.NODE_ENV === 'github'
-    ? '/sha/' // note the trailing slash
-    : '/',
+  pathPrefix: process.env.PATH ?? '/',
   outputDir: "public",
   plugins: [
     {
