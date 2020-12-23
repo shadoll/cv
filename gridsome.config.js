@@ -7,7 +7,7 @@ require('dotenv').config()
 
 module.exports = {
   siteName: 'shadoll',
-  pathPrefix: process.env.PATH ?? '/',
+  pathPrefix: process.env.PATH ? process.env.PATH : '/',
   outputDir: "public",
   plugins: [
     {
