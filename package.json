@@ -3,7 +3,6 @@
   "private": true,
   "scripts": {
     "build": "gridsome build",
-    "github": "export PATH_PREFIX=/sha/ && gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore"
   },
