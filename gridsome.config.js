@@ -6,7 +6,9 @@
 
 module.exports = {
   siteName: 'shadoll',
-  pathPrefix: "/",
+  pathPrefix: process.env.NODE_ENV === 'github'
+    ? '/sha/' // note the trailing slash
+    : '/',
   outputDir: "public",
   plugins: [
     {

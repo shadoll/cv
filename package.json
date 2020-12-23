@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "build": "gridsome build",
+    "github": "NODE_ENV=github gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore"
   },
