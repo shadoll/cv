@@ -11,25 +11,62 @@
         "title": "CV"
     },
     "cv": {
-        "about": "About",
-        "experience": "Experience",
-        "education": "Education",
-        "technologies": "Technologies"
+        "about": {
+            "title": "About",
+            "icon": "mdi-account"
+        },
+        "information": {
+            "title": "Information",
+            "icon": "mdi-book-open-blank-variant"
+        },
+        "technologies": {
+            "title": "Skills",
+            "icon": "mdi-hammer-screwdriver"
+        },
+        "experience": {
+            "title": "Experience",
+            "icon": "mdi-briefcase"
+        },
+        "education": {
+            "title": "Education",
+            "icon": "mdi-school"
+        }
+    },
+    "information": {
+        "age": {
+            "icon": "mdi-calendar-account",
+            "msg": "{years} years / {days} days"
+        },
+        "phone": {
+            "icon": "mdi-phone",
+            "msg": "+380 97 0 641 641"
+        },
+        "email": {
+            "icon": "mdi-email",
+            "msg": "sha@shadoll.dev"
+        },
+        "skype": {
+            "icon": "mdi-skype",
+            "msg": "sha.shadoll"
+        },
+        "location": {
+            "icon": "mdi-map-marker",
+            "msg": "Chernihiv, Ukraine"
+        },
+        "language": {
+            "icon": "mdi-account-voice",
+            "msg": "Ukrainian, English"
+        }
     },
     "about": {
         "name": "Oleksandr Ponomarenko",
-        "years": " years",
-        "days": " days",
         "trade": "programmer, developer",
-        "location": "Chernihiv, Ukraine",
-        "phone": "+380 97 0 641 641",
-        "email": "sha@shadoll.dev",
-        "skype": "sha.shadoll",
-        "web": "https://shadoll.dev"
+        "web": "https://shadoll.dev",
+        "summary": "Results-oriented software developer and research professional with more than twenty years of experience in both development and research positions. I make it my goal to create software with the user in mind, creating applications with a useable and intuitive user interface experience. I also understand the importance of creating a highly readable and easily maintainable source code. I am constantly striving to learn new technologies and look for ways to better myself in this rapidly changing industry."
     },
     "tech": [
         {
-            "group": "Skils",
+            "group": "Work",
             "list": [
                 {
                     "name": "teamwork",
