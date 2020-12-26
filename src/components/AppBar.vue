@@ -22,7 +22,7 @@
 
         <v-toolbar-title
             style="
-                font-family: 'Poiret One', sans-serif;
+                font-family: 'Poiret One', Roboto, sans-serif;
                 font-size: 3rem;
                 text-shadow: #694800 1px 1px 6px;
             "
