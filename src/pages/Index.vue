@@ -5,80 +5,70 @@
 
         <v-main>
             <v-sheet id="scrolling-techniques" class="overflow-y-auto">
-                <v-card width="100%" tile id="about">
-                    <v-card-title>{{ $t("cv.about") }}</v-card-title>
-                    <v-row align="end" class="fill-height">
-                        <v-col>
-                            <v-list-item two-line>
-                                <v-list-item-content>
-                                    <v-list-item-title
-                                        ><v-icon
-                                            :color="textcolor"
-                                            style="transform: rotate(90deg)"
-                                            >mdi-altimeter</v-icon
-                                        >
-                                        {{
-                                            lifeyears +
-                                            $t("about.years") +
-                                            " / " +
-                                            lifedays +
-                                            $t("about.days")
-                                        }}</v-list-item-title
-                                    >
-                                </v-list-item-content>
-                                <v-list-item-content>
-                                    <v-list-item-title
-                                        ><v-icon :color="textcolor"
-                                            >mdi-map-marker</v-icon
-                                        >{{
-                                            $t("about.location")
-                                        }}</v-list-item-title
-                                    >
-                                </v-list-item-content>
-                            </v-list-item>
-                        </v-col>
-                    </v-row>
-                    <v-row>
-                        <v-col>
-                            <v-list-item>
-                                <v-list-item-content>
-                                    <v-list-item-title
-                                        ><v-icon :color="textcolor"
-                                            >mdi-phone</v-icon
-                                        >{{
-                                            $t("about.phone")
-                                        }}</v-list-item-title
-                                    >
-                                </v-list-item-content>
-                                <v-list-item-content>
-                                    <v-list-item-title
-                                        ><v-icon :color="textcolor"
-                                            >mdi-email</v-icon
-                                        >
-                                        {{
-                                            $t("about.email")
-                                        }}</v-list-item-title
-                                    >
-                                </v-list-item-content>
-                                <v-list-item-content>
-                                    <v-list-item-title
-                                        ><v-icon :color="textcolor">{{
-                                            icons.skype
+                <!-- <s-card
+                    :name="name"
+                    v-for="(category, name) in $t('cv')"
+                    :key="name"
+                >
+                    content
+                </s-card> -->
+                <v-row dense>
+                    <v-col class="md-12">
+                        <s-card
+                            :params="{
+                                class: 'mt-0',
+                            }"
+                            name="about"
+                        >
+                            {{ $t("about.summary") }}
+                        </s-card>
+                    </v-col>
+
+                    <v-col class="md-12">
+                        <s-card
+                            :params="{
+                                class: 'mt-0',
+                            }"
+                            name="information"
+                        >
+                            <v-list>
+                                <v-list-item
+                                    v-for="(info, name) in $t('information')"
+                                    :key="name"
+                                >
+                                    <v-list-item-icon>
+                                        <v-icon :color="textcolor">{{
+                                            info.icon
                                         }}</v-icon>
-                                        {{
-                                            $t("about.skype")
-                                        }}</v-list-item-title
-                                    >
-                                </v-list-item-content>
-                            </v-list-item>
-                        </v-col>
-                    </v-row>
-                </v-card>
-                <v-card width="100%" tile id="technologies">
-                    <v-card-title>{{ $t("cv.technologies") }}</v-card-title>
-                    <v-card-text v-for="(tech, k) in $t('tech')" :key="k">
+                                    </v-list-item-icon>
+                                    <v-list-item-content>
+                                        <v-list-item-title>
+                                            {{
+                                                $t(
+                                                    "information." +
+                                                        name +
+                                                        ".msg",
+                                                    information[name]
+                                                )
+                                            }}
+                                        </v-list-item-title>
+                                    </v-list-item-content>
+                                </v-list-item>
+                            </v-list>
+                        </s-card>
+                    </v-col>
+                </v-row>
+
+                <s-card
+                    :params="{
+                        class: 'mt-0',
+                        width: '100%',
+                    }"
+                    name="technologies"
+                >
+                    <v-col v-for="(tech, k) in $t('tech')" :key="k">
                         <v-subheader>{{ tech.group }}</v-subheader>
-                        <v-chip-group column multiple>
+                        <v-chip-group column>
                             <v-chip
                                 v-for="(tech, k) in tech.list"
                                 :key="k"
@@ -92,54 +82,55 @@
                                 {{ tech.title }}
                             </v-chip>
                         </v-chip-group>
-                    </v-card-text>
-                </v-card>
-                <v-card
-                    width="100%"
-                    tile
-                    :id="category"
+                    </v-col>
+                </s-card>
+
+                <s-card
+                    :params="{
+                        class: 'mt-0',
+                        width: '100%',
+                    }"
+                    :name="category"
                     v-for="(category, t) in timelines"
                     :key="t"
                 >
-                    <v-card-title>{{ $t("cv." + category) }}</v-card-title>
-                    <v-card-text>
-                        <v-timeline>
-                            <v-timeline-item
-                                :color="textcolor"
-                                right
-                                small
-                                v-for="(item, k) in $t(category)"
-                                :key="k"
+                    <v-timeline :dark="dark">
+                        <v-timeline-item
+                            :color="textcolor"
+                            right
+                            small
+                            v-for="(item, k) in $t(category)"
+                            :key="k"
+                        >
+                            <template v-slot:opposite>
+                                <h3 class="headline">
+                                    {{ item.place }}
+                                </h3>
+                                <span :class="`${textcolor}--text`">{{
+                                    item.period
+                                }}</span>
+                            </template>
+                            <h2
+                                :class="`font-weight-light mb-4 ${textcolor}--text`"
                             >
-                                <template v-slot:opposite>
-                                    <h3 class="headline">
-                                        {{ item.place }}
-                                    </h3>
-                                    <span :class="`${textcolor}--text`">{{
-                                        item.period
-                                    }}</span>
-                                </template>
-                                <h2
-                                    :class="`font-weight-light mb-4 ${textcolor}--text`"
-                                >
-                                    {{ item.title }}
-                                </h2>
-                                <div>
-                                    {{ item.description }}
-                                </div>
-                            </v-timeline-item>
-                        </v-timeline>
-                    </v-card-text>
-                </v-card>
+                                {{ item.title }}
+                            </h2>
+                            <div>
+                                {{ item.description }}
+                            </div>
+                        </v-timeline-item>
+                    </v-timeline>
+                </s-card>
             </v-sheet>
         </v-main>
     </Resume>
 </template>
 
 <script>
+    import sCard from "../components/sCard";
     import SideBar from "~/components/SideBar";
     import AppBar from "~/components/AppBar";
-    import Resume from "../layouts/Resume.vue";
+    import Resume from "../layouts/Resume";
     import {
         mdiJquery,
         mdiLanguageCss3,
@@ -161,7 +152,7 @@
         mdiHeadDotsHorizontal,
         mdiArrowDecision,
         mdiDatabase,
-        mdiGraphql
+        mdiGraphql,
     } from "@mdi/js";
 
     export default {
@@ -169,12 +160,14 @@
             SideBar,
             AppBar,
             Resume,
+            sCard,
         },
         data: () => ({
             textcolor: "orange",
             drawer: null,
             miniVariant: false,
             mini: false,
+            dark: false,
 
             icons: {
                 skype: mdiSkype,
@@ -190,7 +183,7 @@
                 git: mdiGit,
                 gitlab: mdiGitlab,
                 docker: mdiDocker,
-                bash:mdiBash,
+                bash: mdiBash,
                 teamwork: mdiAccountGroup,
                 leader: mdiAccountSupervisorCircle,
                 creativity: mdiHeadLightbulb,
@@ -214,18 +207,30 @@
         // metaInfo: {
         //     title: "Resume",
         // },
-        // created() {
-        //     console.log(this.$t("meta.title"))
-        //     this.metaInfo.title = this.$t("meta.title");
-        // },
+        created() {
+            //     console.log(this.$t("meta.title"))
+            //     this.metaInfo.title = this.$t("meta.title");
+        },
         computed: {
+            theme() {
+                return this.$vuetify.theme.dark;
+            },
             lifeyears() {
                 return new Date().getFullYear() - 1981;
             },
             lifedays() {
                 return Math.round(
-                    (new Date().getTime() - new Date("1981/03/01").getTime()) / (1000 * 3600 * 24)
+                    (new Date().getTime() - new Date("1981/03/01").getTime()) /
+                        (1000 * 3600 * 24)
                 );
+            },
+            information() {
+                return {
+                    age: {
+                        years: this.lifeyears,
+                        days: this.lifedays,
+                    },
+                };
             },
         },
     };
@@ -239,13 +244,17 @@
         padding-top: 0;
         padding-bottom: 0;
     }
+    .v-subheader {
+        padding: 0;
+        text-transform: uppercase;
+    }
     /* .v-timeline .v-timeline-item--after .v-timeline-item__body {
-                                                                          max-width: calc(70% - 48px) !important;
-                                                                        }
-                                                                        .v-timeline:before {
-                                                                        left: calc(30% - 1px) !important;
-                                                                        }
-                                                                        .v-timeline-item__opposite {
-                                                                          max-width: calc(30% - 48px);
-                                                                        } */
+                                                                                                                                                  max-width: calc(70% - 48px) !important;
+                                                                                                                                                }
+                                                                                                                                                .v-timeline:before {
+                                                                                                                                                left: calc(30% - 1px) !important;
+                                                                                                                                                }
+                                                                                                                                                .v-timeline-item__opposite {
+                                                                                                                                                  max-width: calc(30% - 48px);
+                                                                                                                                                } */
 </style>

@@ -10,16 +10,16 @@
         <v-list dense>
             <v-list-item
                 link
-                v-for="(item, k) in items"
-                :key="k"
-                v-on:click="go('#' + item.name)"
+                v-for="(item, name) in $t('cv')"
+                :key="name"
+                v-on:click="go('#' + name)"
             >
                 <v-list-item-action>
                     <v-icon>{{ item.icon }}</v-icon>
                 </v-list-item-action>
                 <v-list-item-content>
                     <v-list-item-title>{{
-                        $t("cv." + item.name)
+                        item.title
                     }}</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
@@ -31,12 +31,6 @@
     export default {
         props: ["miniVariant"],
         data: () => ({
-            items: [
-                { name: "about", icon: "mdi-account" },
-                { name: "technologies", icon: "mdi-hammer-screwdriver" },
-                { name: "experience", icon: "mdi-briefcase" },
-                { name: "education", icon: "mdi-school" },
-            ],
         }),
         methods: {
             go(label) {
