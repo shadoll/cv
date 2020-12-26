@@ -31,7 +31,7 @@
                             }"
                             name="information"
                         >
-                            <v-list>
+                            <v-list dense>
                                 <v-list-item
                                     v-for="(info, name) in $t('information')"
                                     :key="name"
@@ -62,6 +62,25 @@
                 <s-card
                     :params="{
                         class: 'mt-0',
+                    }"
+                    name="link"
+                >
+                    <v-col>
+                        <v-btn
+                            plain
+                            v-for="(lnk, name) in $t('links')"
+                            :key="name"
+                            @click="newTab(lnk.url)"
+                        >
+                            <v-icon>{{ lnk.icon }}</v-icon>
+                            {{ lnk.title }}
+                        </v-btn>
+                    </v-col>
+                </s-card>
+
+                <s-card
+                    :params="{
+                        class: 'mt-0',
                         width: '100%',
                     }"
                     name="technologies"
@@ -74,11 +93,9 @@
                                 :key="k"
                                 class="ma-1"
                                 :color="textcolor"
-                                label0
                                 outlined
-                                text-color0="white"
                             >
-                                <v-icon left>{{ icons[tech.name] }}</v-icon>
+                                <v-icon left>{{ icons[tech.name] }}{{ tech.icon }}</v-icon>
                                 {{ tech.title }}
                             </v-chip>
                         </v-chip-group>
@@ -180,17 +197,10 @@
                 jquery: mdiJquery,
                 api: mdiApi,
                 sass: mdiSass,
-                git: mdiGit,
-                gitlab: mdiGitlab,
-                docker: mdiDocker,
-                bash: mdiBash,
                 teamwork: mdiAccountGroup,
                 leader: mdiAccountSupervisorCircle,
                 creativity: mdiHeadLightbulb,
                 thinking: mdiHeadDotsHorizontal,
-                traefik: mdiArrowDecision,
-                apache: mdiArrowDecision,
-                nginx: mdiArrowDecision,
                 mysql: mdiDatabase,
                 postgres: mdiDatabase,
                 nosql: mdiDatabase,
@@ -210,6 +220,11 @@
         created() {
             //     console.log(this.$t("meta.title"))
             //     this.metaInfo.title = this.$t("meta.title");
+        },
+        methods: {
+            newTab: function (url) {
+                window.open(url, "_blank");
+            },
         },
         computed: {
             theme() {
@@ -240,6 +255,11 @@
     .v-chip-group {
         margin-top: -15px;
     }
+    .v-card__title {
+        font-family: "Poiret One", Roboto, sans-serif;
+        font-weight: 900;
+        font-size: 1.6rem;
+    }
     .v-card__text {
         padding-top: 0;
         padding-bottom: 0;
@@ -248,13 +268,16 @@
         padding: 0;
         text-transform: uppercase;
     }
+    .v-list--dense .v-list-item .v-list-item__title {
+        font-size: 1rem;
+    }
     /* .v-timeline .v-timeline-item--after .v-timeline-item__body {
-                                                                                                                                                  max-width: calc(70% - 48px) !important;
-                                                                                                                                                }
-                                                                                                                                                .v-timeline:before {
-                                                                                                                                                left: calc(30% - 1px) !important;
-                                                                                                                                                }
-                                                                                                                                                .v-timeline-item__opposite {
-                                                                                                                                                  max-width: calc(30% - 48px);
-                                                                                                                                                } */
+                                                                                                                                                          max-width: calc(70% - 48px) !important;
+                                                                                                                                                        }
+                                                                                                                                                        .v-timeline:before {
+                                                                                                                                                        left: calc(30% - 1px) !important;
+                                                                                                                                                        }
+                                                                                                                                                        .v-timeline-item__opposite {
+                                                                                                                                                          max-width: calc(30% - 48px);
+                                                                                                                                                        } */
 </style>

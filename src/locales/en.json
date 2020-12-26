@@ -19,6 +19,10 @@
             "title": "Information",
             "icon": "mdi-book-open-blank-variant"
         },
+        "link": {
+            "title": "Links",
+            "icon": "mdi-link-variant"
+        },
         "technologies": {
             "title": "Skills",
             "icon": "mdi-hammer-screwdriver"
@@ -63,6 +67,23 @@
         "trade": "programmer, developer",
         "web": "https://shadoll.dev",
         "summary": "Results-oriented software developer and research professional with more than twenty years of experience in both development and research positions. I make it my goal to create software with the user in mind, creating applications with a useable and intuitive user interface experience. I also understand the importance of creating a highly readable and easily maintainable source code. I am constantly striving to learn new technologies and look for ways to better myself in this rapidly changing industry."
+    },
+    "links": {
+        "linkedin": {
+            "title": "LinkedIn",
+            "icon": "mdi-linkedin",
+            "url": "https://www.linkedin.com/in/oleksandr-ponomarenko/?locale=en_US"
+        },
+        "gitlab": {
+            "title": "GitLab",
+            "icon": "mdi-gitlab",
+            "url": "https://gitlab.com/sha"
+        },
+        "github": {
+            "title": "GitHub",
+            "icon": "mdi-github",
+            "url": "https://github.com/shadoll"
+        }
     },
     "tech": [
         {

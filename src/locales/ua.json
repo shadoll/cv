@@ -64,6 +64,23 @@
         "web": "https://shadoll.dev",
         "summary": "Results-oriented software developer and research professional with sixteen years experience in both development and research positions. I make it my goal to create software with the user in mind, creating applications with a useable and intuitive user interface experience. I also understand the importance of creating highly readable and easily maintainable source code. I am constantly striving to learn new technologies and look to ways to better myself in this rapidly changing industry."
     },
+    "links": {
+        "linkedin": {
+            "title": "LinkedIn",
+            "icon": "mdi-linkedin",
+            "url": "https://www.linkedin.com/in/oleksandr-ponomarenko/?locale=uk_UA"
+        },
+        "gitlab": {
+            "title": "GitLab",
+            "icon": "mdi-gitlab",
+            "url": "https://gitlab.com/sha"
+        },
+        "github": {
+            "title": "GitHub",
+            "icon": "mdi-github",
+            "url": "https://github.com/shadoll"
+        }
+    },
     "tech": [
         {
             "group": "Work",
@@ -155,40 +172,52 @@
         },
         {
             "group": "DevOps",
-            "list": [
-                {
+            "list": {
+                "git": {
                     "name": "git",
-                    "title": "git"
+                    "title": "git",
+                    "icon": "mdi-git"
                 },
-                {
+                "gitlab": {
                     "name": "gitlab",
-                    "title": "GitLab CI/CD"
+                    "title": "GitLab CI/CD",
+                    "icon": "mdi-gitlab"
                 },
-                {
+                "github": {
+                    "name": "github",
+                    "title": "GitHub Actions",
+                    "icon": "mdi-github"
+                },
+                "docker": {
                     "name": "docker",
-                    "title": "docker"
+                    "title": "docker",
+                    "icon": "mdi-docker"
                 },
-                {
+                "compose": {
                     "name": "compose",
                     "title": "docker-compose"
                 },
-                {
+                "traefik": {
                     "name": "traefik",
-                    "title": "Traefik"
+                    "title": "Traefik",
+                    "icon": "mdi-arrow-decision"
                 },
-                {
+                "nginx": {
                     "name": "nginx",
-                    "title": "Nginx"
+                    "title": "Nginx",
+                    "icon": "mdi-arrow-decision"
                 },
-                {
+                "apache": {
                     "name": "apache",
-                    "title": "Apache"
+                    "title": "Apache",
+                    "icon": "mdi-arrow-decision"
                 },
-                {
+                "bash": {
                     "name": "bash",
-                    "title": "sh/bash/zsh"
+                    "title": "sh/bash/zsh",
+                    "icon": "mdi-bash"
                 }
-            ]
+            }
         }
     ],
     "experience": [
