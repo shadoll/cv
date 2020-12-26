@@ -9,6 +9,10 @@
 <script>
     import gFooter from "~/components/Footer";
     export default {
+        metaInfo: {
+            script: [{ src: "https://www.w3counter.com/tracker.js?id=135665", body: true }],
+        },
+
         components: { gFooter },
 
         data: () => ({
