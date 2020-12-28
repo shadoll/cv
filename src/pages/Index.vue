@@ -36,17 +36,17 @@
                             }"
                             name="information"
                         >
-                            <v-list dense>
+                            <v-list>
                                 <v-list-item
                                     v-for="(info, name) in $t('information')"
                                     :key="name"
                                 >
-                                    <v-list-item-icon>
+                                    <v-list-item-icon class="mt-3 mb-3">
                                         <v-icon :color="textcolor">{{
                                             info.icon
                                         }}</v-icon>
                                     </v-list-item-icon>
-                                    <v-list-item-content>
+                                    <v-list-item-content class="pt-1 pb-1">
                                         <v-list-item-title>
                                             {{
                                                 $t(
@@ -119,7 +119,7 @@
                     v-for="(category, t) in timelines"
                     :key="t"
                 >
-                    <v-timeline :dark="dark">
+                    <v-timeline :dark="$vuetify.theme.dark">
                         <v-timeline-item
                             :color="textcolor"
                             right
@@ -135,14 +135,33 @@
                                     item.period
                                 }}</span>
                             </template>
-                            <h2
-                                :class="`font-weight-light mb-4 ${textcolor}--text`"
-                            >
-                                {{ item.title }}
-                            </h2>
-                            <div>
-                                {{ item.description }}
-                            </div>
+                            <v-list v-if="item.list">
+                                <v-list-item
+                                    v-for="(subitem, i) in item.list"
+                                    :key="i"
+                                >
+                                    <v-list-item-content>
+                                        <v-list-item-title
+                                            :class="`text-h6 ${textcolor}--text`"
+                                        >
+                                            {{ subitem.title }}
+                                        </v-list-item-title>
+                                        {{ subitem.description }}
+                                    </v-list-item-content>
+                                </v-list-item>
+                            </v-list>
+                            <v-list v-else>
+                                <v-list-item>
+                                    <v-list-item-content>
+                                        <v-list-item-title
+                                            :class="`text-h6 ${textcolor}--text`"
+                                        >
+                                            {{ item.title }}
+                                        </v-list-item-title>
+                                        {{ item.description }}
+                                    </v-list-item-content>
+                                </v-list-item>
+                            </v-list>
                         </v-timeline-item>
                     </v-timeline>
                 </s-card>
@@ -192,7 +211,6 @@
             drawer: null,
             miniVariant: false,
             mini: false,
-            dark: false,
 
             icons: {
                 skype: mdiSkype,
@@ -235,9 +253,6 @@
             },
         },
         computed: {
-            theme() {
-                return this.$vuetify.theme.dark;
-            },
             lifeyears() {
                 return new Date().getFullYear() - 1981;
             },
@@ -285,12 +300,12 @@
         line-height: 0.1rem;
     }
     /* .v-timeline .v-timeline-item--after .v-timeline-item__body {
-                                                                                                                                                                  max-width: calc(70% - 48px) !important;
-                                                                                                                                                                }
-                                                                                                                                                                .v-timeline:before {
-                                                                                                                                                                left: calc(30% - 1px) !important;
-                                                                                                                                                                }
-                                                                                                                                                                .v-timeline-item__opposite {
-                                                                                                                                                                  max-width: calc(30% - 48px);
-                                                                                                                                                                } */
+                                                                                                                                                                              max-width: calc(70% - 48px) !important;
+                                                                                                                                                                            }
+                                                                                                                                                                            .v-timeline:before {
+                                                                                                                                                                            left: calc(30% - 1px) !important;
+                                                                                                                                                                            }
+                                                                                                                                                                            .v-timeline-item__opposite {
+                                                                                                                                                                              max-width: calc(30% - 48px);
+                                                                                                                                                                            } */
 </style>
