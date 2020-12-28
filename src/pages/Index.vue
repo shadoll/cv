@@ -20,7 +20,12 @@
                             }"
                             name="about"
                         >
-                            {{ $t("about.summary") }}
+                            <div class="trade mt-5 mb-5">
+                                {{ $t("about.trade") }}
+                            </div>
+                            <blockquote>
+                                {{ $t("about.summary") }}
+                            </blockquote>
                         </s-card>
                     </v-col>
 
@@ -95,7 +100,10 @@
                                 :color="textcolor"
                                 outlined
                             >
-                                <v-icon left>{{ icons[tech.name] }}{{ tech.icon }}</v-icon>
+                                <v-icon left
+                                    >{{ icons[tech.name]
+                                    }}{{ tech.icon }}</v-icon
+                                >
                                 {{ tech.title }}
                             </v-chip>
                         </v-chip-group>
@@ -271,13 +279,18 @@
     .v-list--dense .v-list-item .v-list-item__title {
         font-size: 1rem;
     }
+    .trade {
+        font-family: "Poiret One", Roboto, sans-serif !important;
+        font-size: 1.6rem;
+        line-height: 0.1rem;
+    }
     /* .v-timeline .v-timeline-item--after .v-timeline-item__body {
-                                                                                                                                                          max-width: calc(70% - 48px) !important;
-                                                                                                                                                        }
-                                                                                                                                                        .v-timeline:before {
-                                                                                                                                                        left: calc(30% - 1px) !important;
-                                                                                                                                                        }
-                                                                                                                                                        .v-timeline-item__opposite {
-                                                                                                                                                          max-width: calc(30% - 48px);
-                                                                                                                                                        } */
+                                                                                                                                                                  max-width: calc(70% - 48px) !important;
+                                                                                                                                                                }
+                                                                                                                                                                .v-timeline:before {
+                                                                                                                                                                left: calc(30% - 1px) !important;
+                                                                                                                                                                }
+                                                                                                                                                                .v-timeline-item__opposite {
+                                                                                                                                                                  max-width: calc(30% - 48px);
+                                                                                                                                                                } */
 </style>

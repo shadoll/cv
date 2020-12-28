@@ -1,7 +1,7 @@
 <template>
     <v-navigation-drawer
         app
-        dark
+        :dark="$vuetify.theme.dark"
         clipped
         :mini-variant.sync="mini"
         permanent

@@ -1,14 +1,14 @@
 <template>
     <v-app-bar
         app
-        clipped-left
-        color="#6A76AB"
+        color="#363636"
         dark
+        clipped-left
         shrink-on-scroll
         prominent
         src="https://picsum.photos/id/180/1920/1080"
         fade-img-on-scroll
-        scroll-target="#scrolling-techniques"
+        scroll-threshold="500"
     >
         <template v-slot:img="{ props }">
             <v-img
@@ -16,48 +16,20 @@
                 gradient="to top right, rgba(53,60,79,0.8), rgba(73,80,99,0.7)"
             ></v-img>
         </template>
-        <v-app-bar-nav-icon
-            @click.stop="miniVariant = !miniVariant"
-        ></v-app-bar-nav-icon>
 
-        <v-toolbar-title
-            style="
-                font-family: 'Poiret One', Roboto, sans-serif;
-                font-size: 3rem;
-                text-shadow: #694800 1px 1px 6px;
-            "
-            class="amber--text text--darken-2"
+        <v-avatar height="100%" width="auto">
+            <g-image src="~/assets/images/avatar.png"></g-image>
+        </v-avatar>
+
+        <v-app-bar-title
+            class="amber--text text--darken-2 text-h5 text-sm-h3 pb-0"
         >
-            <v-row no-gutters>
-                <v-col no-gutters cols="12" sm="2">
-                    <v-avatar size="100">
-                        <g-image src="~/assets/images/avatar.png"></g-image>
-                    </v-avatar>
-                </v-col>
-                <v-col no-gutters cols="12" sm="10"
-                    ><v-row no-gutters
-                        ><v-col no-gutters cols="12" sm="12">
-                            {{ $t("about.name") }}</v-col
-                        >
-                        <v-col
-                            no-gutters
-                            cols="12"
-                            sm="12"
-                            style="font-size: 1.6rem; line-height: 0.1rem"
-                            class="white--text"
-                        >
-                            {{ $t("about.trade") }}
-                        </v-col>
-                    </v-row>
-                </v-col>
-            </v-row>
-        </v-toolbar-title>
+            {{ $t("about.name") }}
+        </v-app-bar-title>
+
         <v-spacer></v-spacer>
         <ColorSwitcher />
         <LocaleSwitcher />
-        <!-- <v-btn icon>
-                <v-icon>mdi-dots-vertical</v-icon>
-            </v-btn> -->
     </v-app-bar>
 </template>
 
@@ -70,7 +42,34 @@
             ColorSwitcher,
         },
         data: () => ({
-            miniVariant: false
+            miniVariant: false,
         }),
+        computed: {
+            size() {
+                switch (this.$vuetify.breakpoint.name) {
+                    case "xs":
+                        return 40;
+                    case "sm":
+                        return 40;
+                    case "md":
+                        return 80;
+                    case "lg":
+                        return 120;
+                    case "xl":
+                        return 120;
+                }
+            },
+        },
     };
 </script>
+
+<style scoped>
+    .v-toolbar__title {
+        text-shadow: #694800 1px 1px 6px;
+    }
+    .v-toolbar__title,
+    .text-h5,
+    .text-sm-h3 {
+        font-family: "Poiret One", Roboto, sans-serif !important;
+    }
+</style>
