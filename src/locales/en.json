@@ -64,7 +64,7 @@
     },
     "about": {
         "name": "Oleksandr Ponomarenko",
-        "trade": "programmer, developer",
+        "trade": "developer, programmer",
         "web": "https://shadoll.dev",
         "summary": "Results-oriented software developer and research professional with more than twenty years of experience in both development and research positions. I make it my goal to create software with the user in mind, creating applications with a useable and intuitive user interface experience. I also understand the importance of creating a highly readable and easily maintainable source code. I am constantly striving to learn new technologies and look for ways to better myself in this rapidly changing industry."
     },
@@ -83,6 +83,11 @@
             "title": "GitHub",
             "icon": "mdi-github",
             "url": "https://github.com/shadoll"
+        },
+        "instagram": {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/sha.shadoll/",
+            "icon": "mdi-instagram"
         }
     },
     "tech": [
@@ -176,71 +181,119 @@
         },
         {
             "group": "DevOps",
-            "list": [
-                {
+            "list": {
+                "git": {
                     "name": "git",
-                    "title": "git"
+                    "title": "git",
+                    "icon": "mdi-git"
                 },
-                {
+                "gitlab": {
                     "name": "gitlab",
-                    "title": "GitLab CI/CD"
+                    "title": "GitLab CI/CD",
+                    "icon": "mdi-gitlab"
                 },
-                {
+                "github": {
+                    "name": "github",
+                    "title": "GitHub Actions",
+                    "icon": "mdi-github"
+                },
+                "docker": {
                     "name": "docker",
-                    "title": "docker"
+                    "title": "docker",
+                    "icon": "mdi-docker"
                 },
-                {
+                "compose": {
                     "name": "compose",
                     "title": "docker-compose"
                 },
-                {
+                "traefik": {
                     "name": "traefik",
-                    "title": "Traefik"
+                    "title": "Traefik",
+                    "icon": "mdi-arrow-decision"
                 },
-                {
+                "nginx": {
                     "name": "nginx",
-                    "title": "Nginx"
+                    "title": "Nginx",
+                    "icon": "mdi-arrow-decision"
                 },
-                {
+                "apache": {
                     "name": "apache",
-                    "title": "Apache"
+                    "title": "Apache",
+                    "icon": "mdi-arrow-decision"
                 },
-                {
+                "bash": {
                     "name": "bash",
-                    "title": "sh/bash/zsh"
+                    "title": "sh/bash/zsh",
+                    "icon": "mdi-bash"
                 }
-            ]
+            }
         }
     ],
     "experience": [
         {
             "place": "Fabrika klientov",
             "period": "January 2018 — September 2020",
-            "title": "Web Developer, DevOps, Product Architect, Product Manager",
-            "description": ""
+            "list": [
+                {
+                    "title": "Tech Lead",
+                    "description": "Designing the company's products, defining technologies, and monitoring results."
+                },
+                {
+                    "title": "Team Lead, Architect",
+                    "description": "Management of the development team, control of work results. Development and setting of tasks."
+                },
+                {
+                    "title": "DevOps",
+                    "description": "Infrastructure design and deployment and project control."
+                },
+                {
+                    "title": "Web Developer, Architect",
+                    "description": "Creating widgets for CRM-system, integration of CRM with third-party services. Design and development of a system of management, accounting, and automatic deployment of integrations."
+                }
+            ]
         },
         {
             "place": "Yarisvet",
             "period": "December 2015 — October 2017",
-            "title": "Web Developer, System Administrator",
-            "description": "Building and development customised web portals to the highest specifications. Setup and configs servers."
+            "list": [
+                {
+                    "title": "Web Developer, Architect",
+                    "description": "Building and developing customized web portals to the highest specifications."
+                },
+                {
+                    "title": "System Administrator",
+                    "description": "Setup and configs servers."
+                }
+            ]
         },
         {
             "place": "Seattle webproject",
             "period": "June 2015 — December 2015",
             "title": "Web Developer",
-            "description": "Building, designing and development of the site – a Cyrillic mirror of Yahoo Japan Auction, where allow to start bidding in real-time. Develop OpenCart modules."
+            "description": "The building, designing, and development of the site – a Cyrillic mirror of Yahoo Japan Auction, where allow starting bidding in real-time. Develop OpenCart modules."
         },
         {
             "place": "Internet Marketing Agency REVOLIFE",
             "period": "October 2013 — September 2014",
-            "title": "Web Developer, Project Manager",
-            "description": "Designing and development of a product for parsing sites with the possibility of easy and flexible configuration. Project management and agency developers management. Participation in the designing and development of the company's CRM product. The overall control of a servers (the server administrator's role)."
+            "list": [
+                {
+                    "title": "Web Developer",
+                    "description": "Designing and developing a product for parsing sites with the possibility of easy and flexible configuration."
+                },
+                {
+                    "title": "Tech Lead",
+                    "description": "Project management and agency developers management. Participation in the designing and development of the company's CRM product."
+                },
+                {
+                    "title": "DevOps",
+                    "description": "The overall control of servers (the server administrator's role)."
+                }
+            ]
         },
         {
             "place": "PJSC “Slavyanski Wallpaper – KFTP”",
             "period": "березень 2013 — October 2014",
-            "title": "1C Developer, Product Architect",
+            "title": "1C Developer, Architect",
             "description": "Development and support of 1C \"Management of the production enterprise\". Development of  \"Electronic document management system\" (EDM/ECM) in 1C 8. Administration of servers and network infrastructure."
         },
         {
@@ -253,7 +306,7 @@
             "place": "Chernihiv branch of “IAPM”",
             "period": "September 2006 — 2010",
             "title": "1C Developer",
-            "description": "Implementation, support and completion of 1C \"Accounting\". Maintenance and completion of 1C 7.7 \"Accounting\" and 1C 7.7 \"Salary\"."
+            "description": "Implementation, support, and completion of 1C \"Accounting\". Maintenance and completion of 1C 7.7 \"Accounting\" and 1C 7.7 \"Salary\"."
         }
     ],
     "education": [
