@@ -64,6 +64,9 @@
 </script>
 
 <style scoped>
+    .v-app-bar-title__content {
+        width: 100%!important;
+    }
     .v-toolbar__title {
         text-shadow: #694800 1px 1px 6px;
     }
