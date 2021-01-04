@@ -126,10 +126,10 @@
 </template>
 
 <script>
+    import Resume from "../layouts/Resume";
     import sCard from "../components/sCard";
     import SideBar from "~/components/SideBar";
     import AppBar from "~/components/AppBar";
-    import Resume from "../layouts/Resume";
     import sTimeline from "../components/sTimeline";
     import {
         mdiJquery,
@@ -177,8 +177,6 @@
             };
         },
         created() {
-            //     console.log(this.$t("meta.title"))
-            //     this.metaInfo.title = this.$t("meta.title");
         },
         methods: {
             newTab: function (url) {
@@ -233,13 +231,4 @@
         font-size: 1.6rem;
         line-height: 0.1rem;
     }
-    /* .v-timeline .v-timeline-item--after .v-timeline-item__body {
-                                                                                                                                                                              max-width: calc(70% - 48px) !important;
-                                                                                                                                                                            }
-                                                                                                                                                                            .v-timeline:before {
-                                                                                                                                                                            left: calc(30% - 1px) !important;
-                                                                                                                                                                            }
-                                                                                                                                                                            .v-timeline-item__opposite {
-                                                                                                                                                                              max-width: calc(30% - 48px);
-                                                                                                                                                                            } */
 </style>
