@@ -101,8 +101,7 @@
                                 outlined
                             >
                                 <v-icon left
-                                    >{{ icons[tech.name]
-                                    }}{{ tech.icon }}</v-icon
+                                    >{{ tech.icon }}</v-icon
                                 >
                                 {{ tech.title }}
                             </v-chip>
@@ -119,51 +118,7 @@
                     v-for="(category, t) in timelines"
                     :key="t"
                 >
-                    <v-timeline :dark="$vuetify.theme.dark">
-                        <v-timeline-item
-                            :color="textcolor"
-                            right
-                            small
-                            v-for="(item, k) in $t(category)"
-                            :key="k"
-                        >
-                            <template v-slot:opposite>
-                                <h3 class="headline">
-                                    {{ item.place }}
-                                </h3>
-                                <span :class="`${textcolor}--text`">{{
-                                    item.period
-                                }}</span>
-                            </template>
-                            <v-list v-if="item.list">
-                                <v-list-item
-                                    v-for="(subitem, i) in item.list"
-                                    :key="i"
-                                >
-                                    <v-list-item-content>
-                                        <v-list-item-title
-                                            :class="`text-h6 ${textcolor}--text`"
-                                        >
-                                            {{ subitem.title }}
-                                        </v-list-item-title>
-                                        {{ subitem.description }}
-                                    </v-list-item-content>
-                                </v-list-item>
-                            </v-list>
-                            <v-list v-else>
-                                <v-list-item>
-                                    <v-list-item-content>
-                                        <v-list-item-title
-                                            :class="`text-h6 ${textcolor}--text`"
-                                        >
-                                            {{ item.title }}
-                                        </v-list-item-title>
-                                        {{ item.description }}
-                                    </v-list-item-content>
-                                </v-list-item>
-                            </v-list>
-                        </v-timeline-item>
-                    </v-timeline>
+                    <s-timeline :category="category" />
                 </s-card>
             </v-sheet>
         </v-main>
@@ -175,6 +130,7 @@
     import SideBar from "~/components/SideBar";
     import AppBar from "~/components/AppBar";
     import Resume from "../layouts/Resume";
+    import sTimeline from "../components/sTimeline";
     import {
         mdiJquery,
         mdiLanguageCss3,
@@ -205,33 +161,13 @@
             AppBar,
             Resume,
             sCard,
+            sTimeline,
         },
         data: () => ({
             textcolor: "orange",
             drawer: null,
             miniVariant: false,
             mini: false,
-
-            icons: {
-                skype: mdiSkype,
-                php: mdiLanguagePhp,
-                laravel: mdiLaravel,
-                vuejs: mdiVuejs,
-                nodejs: mdiNodejs,
-                css: mdiLanguageCss3,
-                html: mdiLanguageHtml5,
-                jquery: mdiJquery,
-                api: mdiApi,
-                sass: mdiSass,
-                teamwork: mdiAccountGroup,
-                leader: mdiAccountSupervisorCircle,
-                creativity: mdiHeadLightbulb,
-                thinking: mdiHeadDotsHorizontal,
-                mysql: mdiDatabase,
-                postgres: mdiDatabase,
-                nosql: mdiDatabase,
-                graphql: mdiGraphql,
-            },
 
             timelines: ["experience", "education"],
         }),
@@ -240,9 +176,6 @@
                 title: this.$i18n.t("meta.title"),
             };
         },
-        // metaInfo: {
-        //     title: "Resume",
-        // },
         created() {
             //     console.log(this.$t("meta.title"))
             //     this.metaInfo.title = this.$t("meta.title");
@@ -254,6 +187,7 @@
         },
         computed: {
             lifeyears() {
+                // wrong counter, it start from year, not bithday
                 return new Date().getFullYear() - 1981;
             },
             lifedays() {

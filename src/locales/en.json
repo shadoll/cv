@@ -96,88 +96,105 @@
             "list": [
                 {
                     "name": "teamwork",
-                    "title": "Teamwork"
+                    "title": "Teamwork",
+                    "icon": "mdi-account-group"
                 },
                 {
                     "name": "leader",
-                    "title": "Leadership"
+                    "title": "Leadership",
+                    "icon": "mdi-account-supervisor-circle"
                 },
                 {
                     "name": "creativity",
-                    "title": "Creativity"
+                    "title": "Creativity",
+                    "icon": "mdi-head-lightbulb"
                 },
                 {
                     "name": "thinking",
-                    "title": "Analytical or Critical Thinking"
+                    "title": "Analytical or Critical Thinking",
+                    "icon": "mdi-head-dots-horizontal"
                 }
             ]
         },
         {
             "group": "Backend",
-            "list": [
-                {
+            "list": {
+                "php": {
                     "name": "php",
-                    "title": "PHP"
+                    "title": "PHP",
+                    "icon": "mdi-language-php"
                 },
-                {
+                "laravel": {
                     "name": "laravel",
-                    "title": "Laravel"
+                    "title": "Laravel",
+                    "icon": "mdi-laravel"
                 },
-                {
+                "api": {
                     "name": "api",
-                    "title": "REST API"
+                    "title": "REST API",
+                    "icon": "mdi-api"
                 },
-                {
+                "nodejs": {
                     "name": "nodejs",
-                    "title": "Node.js"
+                    "title": "Node.js",
+                    "icon": "mdi-nodejs"
                 }
-            ]
+            }
         },
         {
             "group": "Frontend",
-            "list": [
-                {
-                    "name": "html",
-                    "title": "HTML"
-                },
-                {
+            "list": {
+                "vuejs": {
                     "name": "vuejs",
-                    "title": "Vue.js"
+                    "title": "Vue.js",
+                    "icon": "mdi-vuejs"
                 },
-                {
+                "html": {
+                    "name": "html",
+                    "title": "HTML",
+                    "icon": "mdi-language-html5"
+                },
+                "css": {
                     "name": "css",
-                    "title": "CSS"
+                    "title": "CSS",
+                    "icon": "mdi-language-css3"
                 },
-                {
+                "sass": {
                     "name": "sass",
-                    "title": "SASS/LESS/Stylus"
+                    "title": "SASS/LESS/Stylus",
+                    "icon": "mdi-sass"
                 },
-                {
+                "jquery": {
                     "name": "jquery",
-                    "title": "jQuery"
+                    "title": "jQuery",
+                    "icon": "mdi-jquery"
                 }
-            ]
+            }
         },
         {
             "group": "Databases",
-            "list": [
-                {
+            "list": {
+                "mysql": {
                     "name": "mysql",
-                    "title": "MySQL"
+                    "title": "MySQL",
+                    "icon": "mdi-database"
                 },
-                {
+                "postgres": {
                     "name": "postgres",
-                    "title": "PostgreSQL"
+                    "title": "PostgreSQL",
+                    "icon": "mdi-database"
                 },
-                {
+                "nosql": {
                     "name": "nosql",
-                    "title": "NoSQL"
+                    "title": "NoSQL",
+                    "icon": "mdi-database"
                 },
-                {
+                "graphql": {
                     "name": "graphql",
-                    "title": "GraphQL"
+                    "title": "GraphQL",
+                    "icon": "mdi-graphql"
                 }
-            ]
+            }
         },
         {
             "group": "DevOps",
