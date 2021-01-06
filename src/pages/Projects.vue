@@ -6,7 +6,9 @@
         <v-main>
             <v-sheet id="projects" height="100%" class="overflow-y-auto">
                 <v-card class="d-flex justify-center align-center flex-column" height="100%" outlined tile>
-                    <div><clock size="300px" border="0" bg="orange"></clock></div>
+                    <div>
+                        <clock size="300px" border="0" bg="orange"></clock>
+                    </div>
                     <div>In process...</div>
                 </v-card>
             </v-sheet>
@@ -17,13 +19,11 @@
 <script>
     import sSideBar from "~/components/sSideBar";
     import sAppBar from "~/components/sAppBar";
-    import Clock from "vue-clock2";
 
     export default {
         components: {
             sSideBar,
             sAppBar,
-            Clock,
         },
         data: () => ({
             textcolor: "orange",

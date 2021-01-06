@@ -9,6 +9,10 @@ import DefaultLayout from '~/layouts/Default.vue'
 import SimpleLayout from '~/layouts/Simple.vue'
 
 export default function (Vue, { router, head, isClient, appOptions }) {
+  if (isClient) {
+    const { default: Clock } = require('vue-clock2')
+    Vue.component('clock', Clock);
+  }
   head.link.push({
     rel: 'stylesheet',
     href: 'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css',
