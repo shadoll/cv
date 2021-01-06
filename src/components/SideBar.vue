@@ -6,6 +6,7 @@
         :mini-variant.sync="mini"
         permanent
         bottom
+        class="d-print-none"
     >
         <v-list dense>
             <v-list-item
@@ -40,6 +41,7 @@
         },
         computed: {
             mini() {
+                window.ss = this.$vuetify
                 switch (this.$vuetify.breakpoint.name) {
                     case "xs":
                         return true;
