@@ -4,9 +4,9 @@
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import '~/assets/styles.scss'
-import DefaultLayout from '~/layouts/Default.vue'
-import CVLayout from '~/layouts/CV.vue'
 import '~/plugins/vuetify.js'
+import DefaultLayout from '~/layouts/Default.vue'
+import SimpleLayout from '~/layouts/Simple.vue'
 
 export default function (Vue, { router, head, isClient, appOptions }) {
   head.link.push({
@@ -36,6 +36,6 @@ export default function (Vue, { router, head, isClient, appOptions }) {
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
-  Vue.component('CVLayout', CVLayout)
+  Vue.component('Simple', SimpleLayout)
 
 }
