@@ -13,15 +13,13 @@
                 link
                 v-for="(item, name) in $t('cv')"
                 :key="name"
-                v-on:click="go('#' + name)"
+                v-on:click="go(name, item.page)"
             >
                 <v-list-item-action>
                     <v-icon>{{ item.icon }}</v-icon>
                 </v-list-item-action>
                 <v-list-item-content>
-                    <v-list-item-title>{{
-                        item.title
-                    }}</v-list-item-title>
+                    <v-list-item-title>{{ item.title }}</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
         </v-list>
@@ -30,13 +28,20 @@
 
 <script>
     export default {
-        props: ["miniVariant"],
-        data: () => ({
-        }),
+        props: [],
+        data: () => ({}),
         methods: {
-            go(label) {
-                this.$vuetify.goTo(label, "easeInOutCubic");
-                this.mini;
+            go(label, page) {
+                console.log();
+                console.log();
+                if (page == this.$route.path.substring(3)) {
+                    this.$vuetify.goTo('#'+label, "easeInOutCubic");
+                    this.mini
+                } else {
+                    this.$router.push({
+                        path: this.$tp(page, this.$i18n.locale.toString(), true),
+                    });
+                }
             },
         },
         computed: {
@@ -53,7 +58,10 @@
                     case "xl":
                         return false;
                 }
+                return false;
             },
+        },
+        created() {
         },
     };
 </script>

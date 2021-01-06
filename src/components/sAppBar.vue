@@ -6,7 +6,7 @@
         clipped-left
         shrink-on-scroll
         prominent
-        src="https://picsum.photos/id/180/1920/1080"
+        :src="bgimage"
         fade-img-on-scroll
         scroll-threshold="500"
     >
@@ -18,13 +18,13 @@
         </template>
 
         <v-avatar height="100%" width="auto">
-            <g-image src="~/assets/images/avatar.png"></g-image>
+            <slot name="logo"></slot>
         </v-avatar>
 
         <v-app-bar-title
             class="amber--text text--darken-2 text-h5 text-sm-h3 pb-0"
         >
-            {{ $t("about.name") }}
+            <slot />
         </v-app-bar-title>
 
         <v-spacer></v-spacer>
@@ -40,6 +40,9 @@
         components: {
             LocaleSwitcher,
             ColorSwitcher,
+        },
+        props: {
+            bgimage: ""
         },
         data: () => ({
             miniVariant: false,
@@ -65,7 +68,7 @@
 
 <style scoped>
     .v-app-bar-title__content {
-        width: 100%!important;
+        width: 100% !important;
     }
     .v-toolbar__title {
         text-shadow: #694800 1px 1px 6px;
