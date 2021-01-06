@@ -2,7 +2,7 @@
     <simple>
         <s-side-bar :miniVariant="miniVariant" />
         <s-app-bar bgimage="https://picsum.photos/id/180/1920/1080">
-        <!-- <s-app-bar :bgimage="require('@/assets/images/bg.jpg')"> -->
+            <!-- <s-app-bar :bgimage="require('@/assets/images/bg.jpg')"> -->
             <template v-slot:logo>
                 <g-image src="~/assets/images/avatar.png"></g-image>
             </template>
@@ -105,6 +105,7 @@
                                 class="ma-1"
                                 :color="textcolor"
                                 outlined
+                                @click="newTab(tech.url)"
                             >
                                 <v-icon left>{{ tech.icon }}</v-icon>
                                 {{ tech.title }}
@@ -179,7 +180,9 @@
         created() {},
         methods: {
             newTab: function (url) {
-                window.open(url, "_blank");
+                if (!!url) {
+                    window.open(url, "_blank");
+                }
             },
         },
         computed: {

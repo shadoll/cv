@@ -133,6 +133,29 @@
             ]
         },
         {
+            "group": "Development",
+            "list": {
+                "debug": {
+                    "name": "debug",
+                    "title": "Debugging",
+                    "icon": "mdi-bug-check",
+                    "url": "https://en.wikipedia.org/wiki/Debugging"
+                },
+                "psr": {
+                    "name": "psr",
+                    "title": "PSR",
+                    "icon": "mdi-check-decagram",
+                    "url": "https://www.php-fig.org/psr/"
+                },
+                "unittest": {
+                    "name": "unittest",
+                    "title": "Unit testing",
+                    "icon": "mdi-format-list-checks",
+                    "url": "https://en.wikipedia.org/wiki/Unit_testing"
+                }
+            }
+        },
+        {
             "group": "Backend",
             "list": {
                 "php": {
@@ -180,10 +203,25 @@
                     "title": "SASS/LESS/Stylus",
                     "icon": "mdi-sass"
                 },
+                "javascript": {
+                    "name": "javascript",
+                    "title": "JavaScript",
+                    "icon": "mdi-language-javascript"
+                },
+                "typescript": {
+                    "name": "typescript",
+                    "title": "TypeScript",
+                    "icon": "mdi-language-typescript"
+                },
                 "jquery": {
                     "name": "jquery",
                     "title": "jQuery",
                     "icon": "mdi-jquery"
+                },
+                "extensions": {
+                    "name": "extensions",
+                    "title": "Browsers exteinsions",
+                    "icon": "mdi-puzzle"
                 }
             }
         },
@@ -281,7 +319,7 @@
                 },
                 {
                     "title": "Web Developer, Architect",
-                    "description": "Creating widgets for CRM-system, integration of CRM with third-party services. Design and development of a system of management, accounting, and automatic deployment of integrations."
+                    "description": "Creating widgets for CRM-system, integration of CRM with third-party services. Design and development of a system of management, accounting, and automatic deployment of integrations. Chrome/Firefox browser extension development."
                 }
             ]
         },

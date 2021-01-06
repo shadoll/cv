@@ -133,6 +133,29 @@
             ]
         },
         {
+            "group": "Розробка",
+            "list": {
+                "debug": {
+                    "name": "debug",
+                    "title": "Зневадження",
+                    "icon": "mdi-bug-check",
+                    "url": "https://uk.wikipedia.org/wiki/Налагодження_програм"
+                },
+                "psr": {
+                    "name": "psr",
+                    "title": "PSR",
+                    "icon": "mdi-check-decagram",
+                    "url": "https://www.php-fig.org/psr/"
+                },
+                "unittest": {
+                    "name": "unittest",
+                    "title": "Модульне тестування",
+                    "icon": "mdi-format-list-checks",
+                    "url": "https://uk.wikipedia.org/wiki/Модульне_тестування"
+                }
+            }
+        },
+        {
             "group": "Backend",
             "list": {
                 "php": {
@@ -180,10 +203,25 @@
                     "title": "SASS/LESS/Stylus",
                     "icon": "mdi-sass"
                 },
+                "javascript": {
+                    "name": "javascript",
+                    "title": "JavaScript",
+                    "icon": "mdi-language-javascript"
+                },
+                "typescript": {
+                    "name": "typescript",
+                    "title": "TypeScript",
+                    "icon": "mdi-language-typescript"
+                },
                 "jquery": {
                     "name": "jquery",
                     "title": "jQuery",
                     "icon": "mdi-jquery"
+                },
+                "extensions": {
+                    "name": "extensions",
+                    "title": "Розширення браузерів",
+                    "icon": "mdi-puzzle"
                 }
             }
         },
@@ -281,7 +319,7 @@
                 },
                 {
                     "title": "Веб розробник, Архітектор",
-                    "description": "Створення віджетів для CRM-системи, інтеграція CRM зі сторонніми сервісами. Проєктування та розробка систему керування, обліку та автоматичного розгортання інтеграцій."
+                    "description": "Створення віджетів для CRM-системи, інтеграція CRM зі сторонніми сервісами. Проєктування та розробка систему керування, обліку та автоматичного розгортання інтеграцій. Розробка розширення браузерів Chrome/Firefox."
                 }
             ]
         },
