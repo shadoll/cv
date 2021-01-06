@@ -2,6 +2,7 @@
     <simple>
         <s-side-bar :miniVariant="miniVariant" />
         <s-app-bar bgimage="https://picsum.photos/id/180/1920/1080">
+        <!-- <s-app-bar :bgimage="require('@/assets/images/bg.jpg')"> -->
             <template v-slot:logo>
                 <g-image src="~/assets/images/avatar.png"></g-image>
             </template>
