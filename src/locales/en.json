@@ -13,33 +13,44 @@
     "cv": {
         "about": {
             "title": "About",
-            "icon": "mdi-account"
+            "icon": "mdi-account",
+            "page": "/"
         },
         "information": {
             "title": "Information",
-            "icon": "mdi-book-open-blank-variant"
+            "icon": "mdi-book-open-blank-variant",
+            "page": "/"
         },
-        "links": {
+        "link": {
             "title": "Links",
-            "icon": "mdi-link-variant"
+            "icon": "mdi-link-variant",
+            "page": "/"
         },
         "technologies": {
             "title": "Skills",
-            "icon": "mdi-hammer-screwdriver"
+            "icon": "mdi-hammer-screwdriver",
+            "page": "/"
         },
         "experience": {
             "title": "Experience",
-            "icon": "mdi-briefcase"
+            "icon": "mdi-briefcase",
+            "page": "/"
         },
         "education": {
             "title": "Education",
-            "icon": "mdi-school"
+            "icon": "mdi-school",
+            "page": "/"
+        },
+        "projects": {
+            "title": "Projects",
+            "icon": "mdi-application",
+            "page": "/projects"
         }
     },
     "information": {
         "age": {
             "icon": "mdi-calendar-account",
-            "msg": "{years} years / {days} days"
+            "msg": "{days} days / ~{years} years"
         },
         "phone": {
             "icon": "mdi-phone",
@@ -88,6 +99,11 @@
             "title": "Instagram",
             "url": "https://www.instagram.com/sha.shadoll/",
             "icon": "mdi-instagram"
+        },
+        "source": {
+            "title": "This source code",
+            "url": "https://github.com/shadoll/cv",
+            "icon": "mdi-file-code"
         }
     },
     "tech": [

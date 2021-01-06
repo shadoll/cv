@@ -44,14 +44,13 @@
         "projects": {
             "title": "Проєкти",
             "icon": "mdi-application",
-            "page": "/projects",
-            "to": "/projects"
+            "page": "/projects"
         }
     },
     "information": {
         "age": {
             "icon": "mdi-calendar-account",
-            "msg": "{years} років / {days} днів"
+            "msg": "{days} днів / ~{years} років"
         },
         "phone": {
             "icon": "mdi-phone",
@@ -80,7 +79,7 @@
         "web": "https://shadoll.dev",
         "summary": "Розробник та архітектор програмного забезпечення з більш ніж двадцятирічним досвідом роботи. Я ставлю своєю метою створити програмне забезпечення з урахуванням користувача, створюючи програми з корисним та інтуїтивно зрозумілим інтерфейсом користувача. Я також розумію важливість створення читабельного та легко підтримуваного вихідного коду. Я постійно прагну пізнавати нові технології та шукати шляхи вдосконалення себе в цій швидко мінливій галузі."
     },
-    "link": {
+    "links": {
         "linkedin": {
             "title": "LinkedIn",
             "icon": "mdi-linkedin",
@@ -100,6 +99,11 @@
             "title": "Instagram",
             "url": "https://www.instagram.com/sha.shadoll/",
             "icon": "mdi-instagram"
+        },
+        "source": {
+            "title": "Джерельний код",
+            "url": "https://github.com/shadoll/cv",
+            "icon": "mdi-file-code"
         }
     },
     "tech": [
