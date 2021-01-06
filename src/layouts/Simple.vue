@@ -2,18 +2,23 @@
     <v-app id="inspire">
         <slot />
 
-        <g-footer />
+        <s-footer />
     </v-app>
 </template>
 
 <script>
-    import gFooter from "~/components/Footer";
+    import sFooter from "~/components/sFooter";
     export default {
         metaInfo: {
-            script: [{ src: "https://www.w3counter.com/tracker.js?id=135665", body: true }],
+            script: [
+                {
+                    src: "https://www.w3counter.com/tracker.js?id=135665",
+                    body: true,
+                },
+            ],
         },
 
-        components: { gFooter },
+        components: { sFooter },
 
         data: () => ({
             drawer: null,

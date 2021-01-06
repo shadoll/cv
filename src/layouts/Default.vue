@@ -12,12 +12,12 @@
         </header>
         <slot />
 
-        <g-footer/>
+        <s-footer />
     </div>
 </template>
 
 <script>
-    import gFooter from "~/components/Footer"
+    import sFooter from "~/components/sFooter";
     import LocaleSwitcher from "~/components/LocaleSwitcher";
 
     export default {

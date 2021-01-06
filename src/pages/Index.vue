@@ -1,7 +1,7 @@
 <template>
-    <Resume>
-        <side-bar :miniVariant="miniVariant" />
-        <app-bar />
+    <simple>
+        <s-side-bar :miniVariant="miniVariant" />
+        <s-app-bar />
 
         <v-main>
             <v-sheet id="scrolling-techniques" class="overflow-y-auto">
@@ -122,14 +122,13 @@
                 </s-card>
             </v-sheet>
         </v-main>
-    </Resume>
+    </simple>
 </template>
 
 <script>
-    import Resume from "../layouts/Resume";
     import sCard from "../components/sCard";
-    import SideBar from "~/components/SideBar";
-    import AppBar from "~/components/AppBar";
+    import sSideBar from "~/components/sSideBar";
+    import sAppBar from "~/components/sAppBar";
     import sTimeline from "../components/sTimeline";
     import {
         mdiJquery,
@@ -157,17 +156,14 @@
 
     export default {
         components: {
-            SideBar,
-            AppBar,
-            Resume,
+            sSideBar,
+            sAppBar,
             sCard,
             sTimeline,
         },
         data: () => ({
             textcolor: "orange",
-            drawer: null,
             miniVariant: false,
-            mini: false,
 
             timelines: ["experience", "education"],
         }),
@@ -210,11 +206,7 @@
     .v-chip-group {
         margin-top: -15px;
     }
-    .v-card__title {
-        font-family: "Poiret One", Roboto, sans-serif;
-        font-weight: 900;
-        font-size: 1.6rem;
-    }
+
     .v-card__text {
         padding-top: 0;
         padding-bottom: 0;
@@ -223,9 +215,7 @@
         padding: 0;
         text-transform: uppercase;
     }
-    .v-list--dense .v-list-item .v-list-item__title {
-        font-size: 1rem;
-    }
+
     .trade {
         font-family: "Poiret One", Roboto, sans-serif !important;
         font-size: 1.6rem;
