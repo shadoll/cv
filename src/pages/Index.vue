@@ -1,7 +1,12 @@
 <template>
     <simple>
         <s-side-bar :miniVariant="miniVariant" />
-        <s-app-bar />
+        <s-app-bar bgimage="https://picsum.photos/id/180/1920/1080">
+            <template v-slot:logo>
+                <g-image src="~/assets/images/avatar.png"></g-image>
+            </template>
+            {{ $t("about.name") }}
+        </s-app-bar>
 
         <v-main>
             <v-sheet id="scrolling-techniques" class="overflow-y-auto">
@@ -100,9 +105,7 @@
                                 :color="textcolor"
                                 outlined
                             >
-                                <v-icon left
-                                    >{{ tech.icon }}</v-icon
-                                >
+                                <v-icon left>{{ tech.icon }}</v-icon>
                                 {{ tech.title }}
                             </v-chip>
                         </v-chip-group>
@@ -172,8 +175,7 @@
                 title: this.$i18n.t("meta.title"),
             };
         },
-        created() {
-        },
+        created() {},
         methods: {
             newTab: function (url) {
                 window.open(url, "_blank");

@@ -13,27 +13,39 @@
     "cv": {
         "about": {
             "title": "Про мене",
-            "icon": "mdi-account"
+            "icon": "mdi-account",
+            "page": "/"
         },
         "information": {
             "title": "Інформація",
-            "icon": "mdi-book-open-blank-variant"
+            "icon": "mdi-book-open-blank-variant",
+            "page": "/"
         },
         "link": {
             "title": "Посилання",
-            "icon": "mdi-link-variant"
+            "icon": "mdi-link-variant",
+            "page": "/"
         },
         "technologies": {
             "title": "Навички",
-            "icon": "mdi-hammer-screwdriver"
+            "icon": "mdi-hammer-screwdriver",
+            "page": "/"
         },
         "experience": {
             "title": "Досвід роботи",
-            "icon": "mdi-briefcase"
+            "icon": "mdi-briefcase",
+            "page": "/"
         },
         "education": {
             "title": "Освіта",
-            "icon": "mdi-school"
+            "icon": "mdi-school",
+            "page": "/"
+        },
+        "projects": {
+            "title": "Проєкти",
+            "icon": "mdi-application",
+            "page": "/projects",
+            "to": "/projects"
         }
     },
     "information": {
@@ -68,7 +80,7 @@
         "web": "https://shadoll.dev",
         "summary": "Розробник та архітектор програмного забезпечення з більш ніж двадцятирічним досвідом роботи. Я ставлю своєю метою створити програмне забезпечення з урахуванням користувача, створюючи програми з корисним та інтуїтивно зрозумілим інтерфейсом користувача. Я також розумію важливість створення читабельного та легко підтримуваного вихідного коду. Я постійно прагну пізнавати нові технології та шукати шляхи вдосконалення себе в цій швидко мінливій галузі."
     },
-    "links": {
+    "link": {
         "linkedin": {
             "title": "LinkedIn",
             "icon": "mdi-linkedin",

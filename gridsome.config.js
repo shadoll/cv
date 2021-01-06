@@ -14,13 +14,11 @@ module.exports = {
       options: {
         locales: [ // locales list
           'uk-ua',
-          'en-gb',
-          'ru-ru'
+          'en-gb'
         ],
         pathAliases: { // path segment alias for each locales
           'uk-ua': 'ua',
-          'en-gb': 'en',
-          'ru-ru': 'ru'
+          'en-gb': 'en'
         },
         fallbackLocale: 'en-gb', // fallback language
         defaultLocale: 'uk-ua', // default language

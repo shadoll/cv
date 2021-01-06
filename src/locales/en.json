@@ -19,7 +19,7 @@
             "title": "Information",
             "icon": "mdi-book-open-blank-variant"
         },
-        "link": {
+        "links": {
             "title": "Links",
             "icon": "mdi-link-variant"
         },
