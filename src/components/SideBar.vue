@@ -41,7 +41,6 @@
         },
         computed: {
             mini() {
-                window.ss = this.$vuetify
                 switch (this.$vuetify.breakpoint.name) {
                     case "xs":
                         return true;
