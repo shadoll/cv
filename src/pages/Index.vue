@@ -179,7 +179,7 @@
         created() {},
         methods: {
             newTab: function (url) {
-                if (url !== undefined && url!="") {
+                if (url !== undefined) {
                     window.open(encodeURI(url), "_blank");
                 }
             },
