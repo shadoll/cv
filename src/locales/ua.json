@@ -152,6 +152,12 @@
                     "title": "Модульне тестування",
                     "icon": "mdi-format-list-checks",
                     "url": "https://uk.wikipedia.org/wiki/Модульне_тестування"
+                },
+                "codereview": {
+                    "name": "codereview",
+                    "title": "Перевірка коду",
+                    "icon": "mdi-code-tags-check",
+                    "url": "https://uk.wikipedia.org/wiki/Перегляд_коду"
                 }
             }
         },

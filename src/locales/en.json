@@ -152,6 +152,12 @@
                     "title": "Unit testing",
                     "icon": "mdi-format-list-checks",
                     "url": "https://en.wikipedia.org/wiki/Unit_testing"
+                },
+                "codereview": {
+                    "name": "codereview",
+                    "title": "Code Review",
+                    "icon": "mdi-code-tags-check",
+                    "url": "https://en.wikipedia.org/wiki/Code_review"
                 }
             }
         },
