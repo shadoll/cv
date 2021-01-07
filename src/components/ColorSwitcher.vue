@@ -1,9 +1,8 @@
 <template>
     <v-menu left bottom>
         <template v-slot:activator="{ on, attrs }">
-            <v-btn icon v-bind="attrs" v-on="on" @click="colorChanged()" >
-                <v-icon v-if="$vuetify.theme.dark">mdi-brightness-7</v-icon>
-                <v-icon v-if="!$vuetify.theme.dark">mdi-brightness-4</v-icon>
+            <v-btn icon v-bind="attrs" v-on="on" @click="colorChange()" >
+                <v-icon>mdi-theme-light-dark</v-icon>
             </v-btn>
         </template>
     </v-menu>
@@ -14,8 +13,12 @@
     export default {
         name: "ColorSwitcher",
         methods: {
-            colorChanged() {
-                this.$vuetify.theme.dark = !this.$vuetify.theme.dark
+            colorChange() {
+                let theme = !this.$vuetify.theme.dark
+                // console.log(theme)
+                this.$vuetify.theme.dark = theme
+                // localStorage.setItem('theme', JSON.stringify(theme?'dark':'light'));
+                // localStorage.setItem('theme',"none")
             },
         },
     };
