@@ -179,8 +179,8 @@
         created() {},
         methods: {
             newTab: function (url) {
-                if (url === undefined && url!="") {
-                    window.open(url, "_blank");
+                if (url !== undefined && url!="") {
+                    window.open(encodeURI(url), "_blank");
                 }
             },
         },
