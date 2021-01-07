@@ -179,9 +179,9 @@
         created() {},
         methods: {
             newTab: function (url) {
-                if (!!url) {
+                // if (!!url) {
                     window.open(url, "_blank");
-                }
+                // }
             },
         },
         computed: {
