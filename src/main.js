@@ -13,6 +13,7 @@ export default function (Vue, { router, head, isClient, appOptions }) {
     const { default: Clock } = require('vue-clock2')
     Vue.component('clock', Clock);
   }
+
   head.link.push({
     rel: 'stylesheet',
     href: 'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css',
