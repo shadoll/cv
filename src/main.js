@@ -7,12 +7,16 @@ import '~/assets/styles.scss'
 import '~/plugins/vuetify.js'
 import DefaultLayout from '~/layouts/Default.vue'
 import SimpleLayout from '~/layouts/Simple.vue'
+import VueQrcode from '@chenfengyuan/vue-qrcode';
+
 
 export default function (Vue, { router, head, isClient, appOptions }) {
   if (isClient) {
     const { default: Clock } = require('vue-clock2')
     Vue.component('clock', Clock);
   }
+
+  Vue.component(VueQrcode.name, VueQrcode);
 
   head.link.push({
     rel: 'stylesheet',

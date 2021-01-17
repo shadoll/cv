@@ -1,7 +1,13 @@
 <template>
     <v-menu left bottom>
         <template v-slot:activator="{ on, attrs }">
-            <v-btn icon v-bind="attrs" v-on="on" @click="colorChange()">
+            <v-btn
+                icon
+                v-bind="attrs"
+                v-on="on"
+                @click="colorChange()"
+                class="d-print-none"
+            >
                 <v-icon>{{ themeIcon }}</v-icon>
             </v-btn>
         </template>
@@ -22,14 +28,14 @@
                 this.$vuetify.theme.dark = theme;
                 // localStorage.setItem('theme', JSON.stringify(theme?'dark':'light'));
                 // localStorage.setItem('theme',"none")
-            }
+            },
         },
         computed: {
             themeIcon() {
                 return this.$vuetify.theme.dark
                     ? "mdi-brightness-7"
                     : "mdi-brightness-4";
-            }
-        }
+            },
+        },
     };
 </script>

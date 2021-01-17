@@ -1,7 +1,7 @@
 <template>
     <v-menu left bottom>
         <template v-slot:activator="{ on, attrs }">
-            <v-btn icon v-bind="attrs" v-on="on">
+            <v-btn icon v-bind="attrs" v-on="on" class="d-print-none">
                 <v-icon>mdi-translate</v-icon>
             </v-btn>
         </template>
@@ -12,23 +12,15 @@
                 :key="locale"
                 :value="locale"
             >
-                <v-list-item-title>{{ $t("locales."+locale+".title") }}</v-list-item-title>
+                <v-list-item-title>{{
+                    $t("locales." + locale + ".title")
+                }}</v-list-item-title>
             </v-list-item>
         </v-list>
     </v-menu>
-    <!-- <select v-model="currentLocale" @change="localeChanged">
-        <option
-            v-for="locale in availableLocales"
-            :key="locale"
-            :value="locale"
-        >
-            {{ locale }}
-        </option>
-    </select> -->
 </template>
 
 <script>
-    import { mdiConsole } from "@mdi/js";
     export default {
         name: "LocaleSwitcher",
         data: function () {
@@ -49,6 +41,3 @@
         },
     };
 </script>
-
-<style scoped lang="scss">
-</style>

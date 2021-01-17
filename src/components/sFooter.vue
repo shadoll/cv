@@ -1,5 +1,9 @@
 <template>
-    <v-footer :dark="$vuetify.theme.dark" v-bind="footerAttrs">
+    <v-footer
+        :dark="$vuetify.theme.dark"
+        v-bind="footerAttrs"
+        class="d-print-none"
+    >
         <v-col class="text-right" cols="12">
             &copy; {{ new Date().getFullYear() }}, shadoll
         </v-col>
