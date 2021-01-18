@@ -73,5 +73,9 @@
     }
     .v-card__title > div {
         font-size: 0.8rem;
+        margin-left: 1rem;
+    }
+    .v-timeline:before {
+        background-color: #ff9800;
     }
 </style>
