@@ -183,6 +183,11 @@
                     "name": "nodejs",
                     "title": "Node.js",
                     "icon": "mdi-nodejs"
+                },
+                "python": {
+                    "name": "python",
+                    "title": "Python",
+                    "icon": "mdi-language-python"
                 }
             }
         },
@@ -307,6 +312,16 @@
         }
     ],
     "experience": [
+        {
+            "place": "SendPulse",
+            "period": "січень 2021 — поточний час",
+            "list": [
+                {
+                    "title": "Розробник",
+                    "description": ""
+                }
+            ]
+        },
         {
             "place": "Фабрика клієнтів",
             "period": "січень 2018 — вересень 2020",
