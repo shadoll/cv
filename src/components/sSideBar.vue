@@ -32,8 +32,6 @@
         data: () => ({}),
         methods: {
             go(label, page) {
-                console.log();
-                console.log();
                 if (page == this.$route.path.substring(3)) {
                     this.$vuetify.goTo('#'+label, "easeInOutCubic");
                     this.mini
