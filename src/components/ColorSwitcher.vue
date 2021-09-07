@@ -15,7 +15,6 @@
 </template>
 
 <script>
-    import { mdiConsole } from "@mdi/js";
     export default {
         name: "ColorSwitcher",
         data: () => ({
@@ -24,10 +23,11 @@
         methods: {
             colorChange() {
                 let theme = !this.$vuetify.theme.dark;
-                // console.log(theme)
                 this.$vuetify.theme.dark = theme;
-                // localStorage.setItem('theme', JSON.stringify(theme?'dark':'light'));
-                // localStorage.setItem('theme',"none")
+                localStorage.setItem(
+                    "theme",
+                    JSON.stringify(theme ? "dark" : "light")
+                );
             },
         },
         computed: {
@@ -36,6 +36,10 @@
                     ? "mdi-brightness-7"
                     : "mdi-brightness-4";
             },
+        },
+        created() {
+            this.$vuetify.theme.dark =
+                localStorage.getItem("theme") == "\"dark\"" ? true : false;
         },
     };
 </script>
