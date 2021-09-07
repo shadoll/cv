@@ -24,10 +24,13 @@
             colorChange() {
                 let theme = !this.$vuetify.theme.dark;
                 this.$vuetify.theme.dark = theme;
-                localStorage.setItem(
-                    "theme",
-                    JSON.stringify(theme ? "dark" : "light")
-                );
+                // if (process.isClient) {
+                if (localStorage !== 'undefined') {
+                    localStorage.setItem(
+                        "theme",
+                        JSON.stringify(theme ? "dark" : "light")
+                    );
+                }
             },
         },
         computed: {
@@ -38,8 +41,11 @@
             },
         },
         created() {
-            this.$vuetify.theme.dark =
-                localStorage.getItem("theme") == "\"dark\"" ? true : false;
+            // if (process.isClient) {
+            if (localStorage !== 'undefined') {
+                this.$vuetify.theme.dark =
+                    localStorage.getItem("theme") == '"dark"' ? true : false;
+            }
         },
     };
 </script>
