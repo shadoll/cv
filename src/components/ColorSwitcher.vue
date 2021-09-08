@@ -47,7 +47,7 @@
             },
         },
         created() {
-            if (process.isClient) {
+            if (this.isBrowser) {
                 this.$vuetify.theme.dark =
                     localStorage.getItem("theme") == '"dark"' ? true : false;
             }
