@@ -21,10 +21,17 @@
             icon: "mdi-theme-light-dark",
         }),
         methods: {
+            isBrowser() {
+                return (
+                    typeof window !== "undefined" &&
+                    {}.toString.call(window) === "[object Window]"
+                );
+            },
             colorChange() {
                 let theme = !this.$vuetify.theme.dark;
                 this.$vuetify.theme.dark = theme;
-                if (process.isClient) {
+                // if (process.isClient) {
+                if (this.isBrowser) {
                     localStorage.setItem(
                         "theme",
                         JSON.stringify(theme ? "dark" : "light")
