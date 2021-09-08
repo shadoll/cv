@@ -24,8 +24,7 @@
             colorChange() {
                 let theme = !this.$vuetify.theme.dark;
                 this.$vuetify.theme.dark = theme;
-                // if (process.isClient) {
-                if (window || process.isClient) {
+                if (process.isClient) {
                     localStorage.setItem(
                         "theme",
                         JSON.stringify(theme ? "dark" : "light")
@@ -41,8 +40,7 @@
             },
         },
         created() {
-            // if (process.isClient) {
-            if (window || process.isClient) {
+            if (process.isClient) {
                 this.$vuetify.theme.dark =
                     localStorage.getItem("theme") == '"dark"' ? true : false;
             }
