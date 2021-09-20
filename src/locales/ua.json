@@ -45,6 +45,11 @@
             "title": "Проєкти",
             "icon": "mdi-application",
             "page": "/projects"
+        },
+        "referral": {
+            "title": "Реферальні посилання",
+            "icon": "mdi-account-arrow-right",
+            "page": "/referral"
         }
     },
     "information": {
@@ -419,6 +424,55 @@
             "period": "1998 — 2000",
             "title": "електронні системи",
             "description": "Не закінчив"
+        }
+    ],
+    "referral": {
+        "desc": "Перелік моїх реферальніних посилань. Всіма сервісами я користуюсь, тож раджу:",
+        "linkButton": "Спробувати"
+    },
+    "referrals": [
+        {
+            "group": "Фінанси",
+            "list": [
+                {
+                    "name": "monobank",
+                    "title": "Монобанк",
+                    "description": "Перший в Україні мобільний банк",
+                    "url": "https://monobank.ua/r/CBdY",
+                    "image": "mono.svg"
+                },
+                {
+                    "name": "bvr",
+                    "title": "Банк Власний Рахунок",
+                    "description": "Банк Власний Рахунок - від групи компаній Fozzy Group",
+                    "url": "https://bvr.page.link/gSZS",
+                    "image": "bvr.svg"
+                }
+            ]
+        },
+        {
+            "group": "Програмне забезпечення",
+            "list":[
+                {
+                    "name": "setapp",
+                    "title": "Setapp",
+                    "description": "Колекція найкращих програм для macOS",
+                    "url": "https://go.setapp.com/invite/f9dy6ezn",
+                    "image": "setapp.svg"
+                }
+            ]
+        },
+        {
+            "group": "Кешбек",
+            "list": [
+                {
+                    "name": "smartysale",
+                    "title": "Smarty.Sale",
+                    "description": "Кешбек-сервіс, де ви економите гроші на покупках у ваших улюблених інтернет магазинах",
+                    "url": "https://smarty.sale/460649",
+                    "image": "smartysale.svg"
+                }
+            ]
         }
     ]
 }

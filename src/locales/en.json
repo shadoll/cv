@@ -45,6 +45,11 @@
             "title": "Projects",
             "icon": "mdi-application",
             "page": "/projects"
+        },
+        "referral": {
+            "title": "Referral links",
+            "icon": "mdi-account-arrow-right",
+            "page": "/referral"
         }
     },
     "information": {
@@ -419,6 +424,55 @@
             "period": "1998 — 2000",
             "title": "Electronic systems",
             "description": "Not finished"
+        }
+    ],
+    "referral": {
+        "desc": "List of my referral links. I use all services, so I advise:",
+        "linkButton": "Try it"
+    },
+    "referrals": [
+        {
+            "group": "Finances",
+            "list": [
+                {
+                    "name": "monobank",
+                    "title": "Monobank",
+                    "description": "The first mobile bank in Ukraine",
+                    "url": "https://monobank.ua/r/CBdY",
+                    "image": "mono.svg"
+                },
+                {
+                    "name": "bvr",
+                    "title": "Bank Own Account",
+                    "description": "Bank Own Account - from the group of companies Fozzy Group",
+                    "url": "https://bvr.page.link/gSZS",
+                    "image": "bvr.svg"
+                }
+            ]
+        },
+        {
+            "group": "Software",
+            "list":[
+                {
+                    "name": "setapp",
+                    "title": "Setapp",
+                    "description": "The collection of top-rated apps for macOS",
+                    "url": "https://go.setapp.com/invite/f9dy6ezn",
+                    "image": "setapp.svg"
+                }
+            ]
+        },
+        {
+            "group": "Cashback",
+            "list": [
+                {
+                    "name": "smartysale",
+                    "title": "Smarty.Sale",
+                    "description": "Сashback service where you save money on purchases in your favorite online stores",
+                    "url": "https://smarty.sale/460649",
+                    "image": "smartysale.svg"
+                }
+            ]
         }
     ]
 }

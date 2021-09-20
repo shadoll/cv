@@ -1,6 +1,8 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
+import { func } from './func.js'
+
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import '~/assets/styles.scss'
@@ -42,6 +44,8 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   appOptions.i18n.setLocaleMessage('en-gb', require('./locales/en.json'))
   appOptions.i18n.setLocaleMessage('uk-ua', require('./locales/ua.json'))
   // appOptions.i18n.setLocaleMessage('ru-ru', require('./locales/en.json'))
+
+  Vue.prototype.$func = func
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)

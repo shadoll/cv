@@ -8,6 +8,9 @@ module.exports = {
   siteName: 'shadoll',
   pathPrefix: process.env.PATH_PREFIX ? process.env.PATH_PREFIX : '/',
   outputDir: "public",
+  chainWebpack: config => {
+    config.resolve.alias.set('@images', '@/assets/images')
+  },
   plugins: [
     {
       use: "gridsome-plugin-i18n",
@@ -28,5 +31,8 @@ module.exports = {
         }
       }
     }
-  ]
+  ],
+  chainWebpack: config => {
+    config.resolve.alias.set('@images', '@/assets/images')
+  },
 }
