@@ -10,12 +10,14 @@
     "@chenfengyuan/vue-qrcode": "^1.0.2",
     "gridsome": "^0.7.23",
     "gridsome-plugin-i18n": "^1.6.0",
+    "vue": "^2.6.14",
     "vue-clock2": "^1.1.5",
-    "vuetify": "^2.4.2"
+    "vuetify": "^2.5.8"
   },
   "devDependencies": {
     "@mdi/js": "^5.8.55",
-    "node-sass": "^5.0.0",
+    "assets-loader": "^0.5.2",
+    "node-sass": "^6.0.1",
     "sass": "^1.32.4",
     "sass-loader": "^10.1.1",
     "webpack-node-externals": "^2.5.2"
