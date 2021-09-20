@@ -21,17 +21,10 @@
             icon: "mdi-theme-light-dark",
         }),
         methods: {
-            isBrowser() {
-                return (
-                    typeof window !== "undefined" &&
-                    {}.toString.call(window) === "[object Window]"
-                );
-            },
             colorChange() {
                 let theme = !this.$vuetify.theme.dark;
                 this.$vuetify.theme.dark = theme;
-                // if (process.isClient) {
-                if (this.isBrowser) {
+                if (process.isClient) {
                     localStorage.setItem(
                         "theme",
                         JSON.stringify(theme ? "dark" : "light")
@@ -47,7 +40,7 @@
             },
         },
         created() {
-            if (this.isBrowser) {
+            if (process.isClient) {
                 this.$vuetify.theme.dark =
                     localStorage.getItem("theme") == '"dark"' ? true : false;
             }
