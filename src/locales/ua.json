@@ -463,6 +463,17 @@
             ]
         },
         {
+            "group": "Магазини",
+            "list":[
+                {
+                    "name": "silpo",
+                    "title": "Сільпо",
+                    "description": "Супермаркети «Сільпо»",
+                    "url": "https://silpo.page.link/KpY1URBh7dRcHTxy7"
+                }
+            ]
+        },
+        {
             "group": "Кешбек",
             "list": [
                 {
