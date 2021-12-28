@@ -471,6 +471,13 @@
                     "description": "Supermarkets \"Silpo\"",
                     "url": "https://silpo.page.link/KpY1URBh7dRcHTxy7",
                     "image": "silpo.svg"
+                },
+                {
+                    "name": "iherb",
+                    "title": "iHerb",
+                    "description": "Health and wellness products",
+                    "url": "https://iherb-app-referral.onelink.me/jjIv/2a71a68e",
+                    "image": "iherb.svg"
                 }
             ]
         },
