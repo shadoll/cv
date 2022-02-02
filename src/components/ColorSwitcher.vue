@@ -41,8 +41,15 @@
         },
         created() {
             if (process.isClient) {
-                this.$vuetify.theme.dark =
-                    localStorage.getItem("theme") == '"dark"' ? true : false;
+                const isSysDarkMode =
+                    window.matchMedia &&
+                    window.matchMedia("(prefers-color-scheme: dark)").matches;
+                if (localStorage.getItem("theme") == null) {
+                    this.$vuetify.theme.dark = isSysDarkMode;
+                } else {
+                    this.$vuetify.theme.dark =
+                        localStorage.getItem("theme") == '"dark"' ? true : false;
+                }
             }
         },
     };
