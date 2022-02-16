@@ -49,7 +49,21 @@
                                                 {{ referral.title }}
                                             </v-card-title>
                                             <v-card-text>
-                                                {{ referral.description }}
+                                                <div
+                                                    class="text-subtitle-1"
+                                                    v-text="
+                                                        referral.subtitle
+                                                            ? referral.subtitle
+                                                            : ''
+                                                    "
+                                                />
+                                                <div>
+                                                    {{
+                                                        referral.description
+                                                            ? referral.description
+                                                            : ""
+                                                    }}
+                                                </div>
                                             </v-card-text>
                                             <v-card-actions>
                                                 <v-list-item class="grow">
