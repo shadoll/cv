@@ -320,6 +320,7 @@
         {
             "place": "SendPulse",
             "period": "січень 2021 — поточний час",
+            "url": "https://sendpulse.ua",
             "list": [
                 {
                     "title": "Розробник",
@@ -330,6 +331,7 @@
         {
             "place": "Фабрика клієнтів",
             "period": "січень 2018 — вересень 2020",
+            "url": "https://fabrika-klientov.ua",
             "list": [
                 {
                     "title": "Технічний керівник",
