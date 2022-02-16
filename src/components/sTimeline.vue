@@ -15,6 +15,15 @@
             <template v-slot:opposite v-if="!$vuetify.breakpoint.smAndDown">
                 <h3 class="headline">
                     {{ item.place }}
+                    <v-icon
+                        v-if="item.url"
+                        link
+                        size="20"
+                        :color="`${textcolor}`"
+                        :dark="$vuetify.theme.dark"
+                        @click="newTab(item.url)"
+                        >mdi-open-in-new</v-icon
+                    >
                 </h3>
                 <span :class="`${textcolor}--text`">{{ item.period }}</span>
             </template>
@@ -62,6 +71,13 @@
         data: () => ({
             textcolor: "orange",
         }),
+        methods: {
+            newTab: function (url) {
+                if (url !== undefined && url != "") {
+                    window.open(encodeURI(url), "_blank");
+                }
+            },
+        },
     };
 </script>
 
