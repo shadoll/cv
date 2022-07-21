@@ -11,16 +11,16 @@
     "@chenfengyuan/vue-qrcode": "^1.0.2",
     "gridsome": "^0.7.23",
     "gridsome-plugin-i18n": "^1.6.0",
-    "vue": "^2.6.14",
+    "vue": "^2.7.7",
     "vue-clock2": "^1.1.5",
-    "vuetify": "^2.5.8"
+    "vuetify": "^2.6.7"
   },
   "devDependencies": {
-    "@mdi/js": "^6.1.95",
+    "@mdi/js": "^6.9.96",
     "assets-loader": "^0.5.2",
     "node-sass": "^6.0.1",
     "sass": "^1.41.1",
-    "sass-loader": "^10.2.0",
+    "sass-loader": "^10.3.1",
     "webpack-node-externals": "^2.5.2"
   }
 }

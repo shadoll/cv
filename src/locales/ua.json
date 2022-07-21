@@ -152,6 +152,12 @@
                     "icon": "mdi-check-decagram",
                     "url": "https://www.php-fig.org/psr/"
                 },
+                "pep": {
+                    "name": "pep",
+                    "title": "PEP",
+                    "icon": "mdi-check-decagram",
+                    "url": "https://peps.python.org/"
+                },
                 "unittest": {
                     "name": "unittest",
                     "title": "Модульне тестування",
