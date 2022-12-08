@@ -90,6 +90,8 @@
     .v-card__title > div {
         font-size: 0.8rem;
         margin-left: 1rem;
+        word-break: break-word;
+        line-height: normal;
     }
     .v-timeline:before {
         background-color: #ff9800;
