@@ -460,7 +460,7 @@
         },
         {
             "group": "Програмне забезпечення",
-            "list":[
+            "list": [
                 {
                     "name": "setapp",
                     "title": "Setapp",
@@ -480,7 +480,7 @@
         },
         {
             "group": "Магазини",
-            "list":[
+            "list": [
                 {
                     "name": "silpo",
                     "title": "Сільпо",
@@ -508,6 +508,281 @@
                     "image": "smartysale.svg"
                 }
             ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "ThermoEco - сайт виробника термодеревини",
+            "title": "ThermoEco - розробка та супровід",
+            "description": "Односторінковий сайт",
+            "years": {
+                "development": "2017",
+                "support": "2017-2018"
+            },
+            "platform": null,
+            "type": "landing",
+            "image": "thermoeco.com.ua.png",
+            "url": "https://thermoeco.com.ua",
+            "state": {
+                "online": false,
+                "support": false
+            }
+        },
+        {
+            "title": "Меблева фабрика «Nika Меблі»",
+            "description": "Інтернет-крамниця - розробка та супровід",
+            "years": {
+                "development": "2010, 2017",
+                "support": "2010-{now}"
+            },
+            "platform": "opencart",
+            "type": "ecommerce",
+            "image": "nikamebel.info.png",
+            "url": "https://nikamebel.info",
+            "state": {
+                "online": true,
+                "support": true
+            }
+        },
+        {
+            "title": "Меблева фабрика «Шкафнік»",
+            "description": "Інформаційній сайт - розробка та супровід",
+            "years": {
+                "development": "2016",
+                "support": "2016-{now}"
+            },
+            "platform": null,
+            "type": "info",
+            "image": "shkafnik.com.png",
+            "url": "https://shkafnik.com",
+            "state": {
+                "online": true,
+                "support": true
+            }
+        },
+        {
+            "title": "Офіційний сайт народного депутата України Анатолія Євлахова",
+            "description": "Інформаційній сайт - розробка",
+            "years": {
+                "development": "2015",
+                "support": null
+            },
+            "platform": "wordpress",
+            "type": "info",
+            "image": "yevlahov.org.png",
+            "url": "",
+            "state": {
+                "online": false,
+                "support": false
+            }
+        },
+        {
+            "title": "Брецька сільська рада Корюківського району Чернігівської області",
+            "description": "Інформаційній сайт - розробка",
+            "years": {
+                "development": "2014",
+                "support": null
+            },
+            "platform": "wordpress",
+            "type": "info",
+            "image": "brechrada.com.ua.png",
+            "url": "http://brechrada.com.ua",
+            "state": {
+                "online": true,
+                "support": false
+            }
+        },
+        {
+            "title": "ТОВ «Зебнитц»",
+            "description": "Інформаційній сайт - розробка",
+            "years": {
+                "development": "2016-2018",
+                "support": null
+            },
+            "platform": "wordpress",
+            "type": "info",
+            "image": "nalichnik.com.ua.png",
+            "url": "",
+            "state": {
+                "online": false,
+                "support": false
+            }
+        },
+        {
+            "title": "Zebnits - деревʼяні вікна з склопакетом",
+            "description": "Інформаційній сайт - розробка",
+            "years": {
+                "development": "2017",
+                "support": null
+            },
+            "platform": null,
+            "type": "info",
+            "image": "zebnits.com.png",
+            "url": "https://zebnits.com",
+            "state": {
+                "online": true,
+                "support": false
+            }
+        },
+        {
+            "title": "Група Компаній «КВАРТА»",
+            "description": "Інтернет-крамниця - розробка та супровід",
+            "years": {
+                "development": "2013",
+                "support": "2013-2016"
+            },
+            "platform": "cs-cart",
+            "type": "ecommerce",
+            "image": "kvartashop.com.png",
+            "url": "https://kvartagroup.com",
+            "state": {
+                "online": true,
+                "support": false
+            }
+        },
+        {
+            "title": "Bluray.guru",
+            "description": "Інтернет-крамниця - розробка та супровід",
+            "years": {
+                "development": "2013",
+                "support": "2013-2016"
+            },
+            "platform": "cs-cart",
+            "type": "ecommerce",
+            "image": "bluray.guru.png",
+            "url": "https://bluray.guru",
+            "state": {
+                "online": true,
+                "support": false
+            }
+        },
+        {
+            "title": "Меблева компанія «Vintage»",
+            "description": "Сайт компанії - розробка та супровід",
+            "years": {
+                "development": "2015-2017",
+                "support": "2015-{now}"
+            },
+            "platform": null,
+            "type": "info",
+            "image": "vintage.com.ua.png",
+            "url": "https://vintage.com.ua",
+            "state": {
+                "online": true,
+                "support": true
+            }
+        },
+        {
+            "title": "Магазин меблів «Мебелинка»",
+            "description": "Інтернет-крамниця - розробка та супровід",
+            "years": {
+                "development": "2017",
+                "support": "2017"
+            },
+            "platform": "opencart",
+            "type": "ecommerce",
+            "image": "mebelinka.com.ua.png",
+            "url": "https://mebelinka.com.ua",
+            "state": {
+                "online": false,
+                "support": false
+            }
+        },
+        {
+            "title": "Меблева компанія «RommerIn»",
+            "description": "Інформаційний сайт компанії - розробка та супровід",
+            "years": {
+                "development": "2017",
+                "support": "2017-{now}"
+            },
+            "platform": null,
+            "type": "info",
+            "image": "roomerin.com.png",
+            "url": "https://roomerin.com",
+            "state": {
+                "online": true,
+                "support": true
+            }
+        },
+        {
+            "title": "Інтернет-крамниця «БІОС»",
+            "description": "Сайт компанії - розробка",
+            "years": {
+                "development": "2016",
+                "support": null
+            },
+            "platform": null,
+            "type": "info",
+            "image": "biosproduction.com.png",
+            "url": "",
+            "state": {
+                "online": false,
+                "support": false
+            }
+        },
+        {
+            "title": "Інтернет-портал «HitAsia»",
+            "description": "розробка",
+            "years": {
+                "development": "2015-2016",
+                "support": null
+            },
+            "platform": null,
+            "type": "info",
+            "image": "hitasia.ru.png",
+            "url": "https://hitasia.ru",
+            "state": {
+                "online": false,
+                "support": false
+            }
+        },
+        {
+            "title": "Сайт «Favorit»",
+            "description": "Сайт компанії - розробка",
+            "years": {
+                "development": "2015",
+                "support": null
+            },
+            "platform": "wordpress",
+            "type": "info",
+            "image": "favoritlt.png",
+            "url": "https://favoritltd.com",
+            "state": {
+                "online": false,
+                "support": false
+            }
+        },
+        {
+            "title": "Сайт «Газобетон» / ТОВ «Лариса»",
+            "description": "Інформаційний сайт - розробка",
+            "years": {
+                "development": "2015",
+                "support": null
+            },
+            "platform": "wordpress",
+            "type": "info",
+            "image": "gazobeton.org.ua.png",
+            "url": "https://gazobeton.org.ua",
+            "state": {
+                "online": false,
+                "support": false
+            }
+        },
+        {
+            "title": "Сайт «SlavForest»",
+            "description": "Інформаційний сайт - розробка",
+            "years": {
+                "development": "2019",
+                "support": null
+            },
+            "platform": null,
+            "type": "info",
+            "image": "slavforest.com.ua.png",
+            "url": "https://slavforest.com.ua",
+            "state": {
+                "online": true,
+                "support": false
+            }
         }
     ]
 }
