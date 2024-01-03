@@ -453,7 +453,7 @@
                     "name": "bvr",
                     "title": "Банк Власний Рахунок",
                     "description": "Банк Власний Рахунок - від групи компаній Fozzy Group",
-                    "url": "https://bvr.page.link/gSZS",
+                    "url": "https://bvr.page.link/NudB",
                     "image": "bvr.svg"
                 }
             ]
@@ -485,14 +485,14 @@
                     "name": "silpo",
                     "title": "Сільпо",
                     "description": "Супермаркети «Сільпо»",
-                    "url": "https://silpo.page.link/kLwBw2R8YpbiAMPFA",
+                    "url": "https://silpo.page.link/7rXJ",
                     "image": "silpo.svg"
                 },
                 {
                     "name": "iherb",
                     "title": "iHerb",
                     "description": "Товари для здоров'я та гарного самопочуття",
-                    "url": "https://iherb-app-referral.onelink.me/jjIv/2a71a68e",
+                    "url": "https://iherb.co/fxorKa1",
                     "image": "iherb.svg"
                 }
             ]
@@ -500,6 +500,13 @@
         {
             "group": "Кешбек",
             "list": [
+                {
+                    "name": "letyshops",
+                    "title": "LetyShops",
+                    "description": "Кешбек-сервіс, де ви економите гроші на покупках у ваших улюблених інтернет магазинах",
+                    "url": "https://letyshops.com/ua/winwin?ww=12959759",
+                    "image": "letyshops.svg"
+                },
                 {
                     "name": "smartysale",
                     "title": "Smarty.Sale",
